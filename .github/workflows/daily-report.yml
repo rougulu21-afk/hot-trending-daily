@@ -1,0 +1,70 @@
+name: Daily Hot Report
+
+on:
+  # 每天北京时间 9:00 自动运行
+  # 北京时间 = UTC + 8，所以 9:00 UTC = 1:00 UTC
+  schedule:
+    - cron: "0 1 * * *"
+  
+  # 支持手动触发（workflow_dispatch）
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '指定日期 (可选，格式: YYYY-MM-DD)'
+        required: false
+        default: ''
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. 拉取代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. 设置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      # 4. 生成日报
+      - name: Generate daily report
+        run: |
+          python hot_trending_daily.py
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+
+      # 5. 获取生成的 HTML 文件路径
+      - name: Get generated HTML file
+        id: html-file
+        run: |
+          date=$(date +%Y-%m-%d)
+          echo "file=html/${date}-热榜日报.html" >> $GITHUB_OUTPUT
+          echo "path=${date}-热榜日报.html" >> $GITHUB_OUTPUT
+
+      # 6. 上传 HTML 文件作为 artifact（保留7天）
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-report-${{ steps.html-file.outputs.path }}
+          path: ${{ steps.html-file.outputs.file }}
+          retention-days: 7
+
+      # 7. 输出完成信息
+      - name: Summary
+        run: |
+          echo "## 📊 每日热榜日报生成完成" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **日期**: $(date +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
+          echo "- **运行时间**: $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "- **HTML 文件**: ${{ steps.html-file.outputs.file }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 文件下载" >> $GITHUB_STEP_SUMMARY
+          echo "在 Artifacts 中下载最新报告" >> $GITHUB_STEP_SUMMARY
