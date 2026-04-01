@@ -13,6 +13,44 @@ from datetime import datetime
 from typing import Dict, List, Optional
 
 
+def build_trending_list(data: Dict, source: str, max_items: int = 5) -> str:
+    """
+    构建热榜列表的 Markdown 内容
+
+    Args:
+        data: 完整数据字典
+        source: 平台名称（36氪/百度/抖音）
+        max_items: 最大条目数
+
+    Returns:
+        Markdown 格式的热榜列表
+    """
+    items = data.get("data", {}).get(source, [])
+    if not items:
+        return "暂无数据"
+
+    lines = []
+    for i, item in enumerate(items[:max_items]):
+        title = item.get("title", "无标题")
+        url = item.get("url", "")
+        hot_text = item.get("hot_text", "")
+
+        # 转义 Markdown 特殊字符（主要转义中括号避免解析问题）
+        title_escaped = title.replace("[", "\\[").replace("]", "\\]")
+
+        # 构建可点击链接
+        if url:
+            lines.append(f"🔝 {i+1}. [{title_escaped}]({url})")
+            if hot_text:
+                lines[-1] += f" 🔥{hot_text}"
+        else:
+            lines.append(f"🔝 {i+1}. {title_escaped}")
+            if hot_text:
+                lines[-1] += f" 🔥{hot_text}"
+
+    return "\n".join(lines)
+
+
 def send_feishu_message(webhook_url: str, data: Dict) -> bool:
     """
     发送飞书消息卡片
@@ -28,24 +66,29 @@ def send_feishu_message(webhook_url: str, data: Dict) -> bool:
         print("⚠️ 未配置飞书 Webhook，跳过推送")
         return False
 
-    # 读取 HTML 文件路径（由主脚本传入）
-    html_file = os.environ.get("HTML_FILE", "")
-
     today = data.get("date", datetime.now().strftime("%Y-%m-%d"))
-    sources = data.get("sources", [])
 
-    # 统计各平台数据条数
-    stats = []
-    for source in sources:
+    # 平台配置
+    platform_config = {
+        "36氪": {"icon": "📰", "max_items": 5},
+        "百度": {"icon": "🔍", "max_items": 5},
+        "抖音": {"icon": "🎵", "max_items": 5}
+    }
+
+    # 构建各平台热榜内容
+    trending_sections = []
+    for source in data.get("sources", []):
+        config = platform_config.get(source, {"icon": "📋", "max_items": 5})
+        max_items = config["max_items"]
+        icon = config["icon"]
+
+        trending_list = build_trending_list(data, source, max_items)
         count = len(data.get("data", {}).get(source, []))
-        if source == "36氪":
-            stats.append(f"📰 36氪: {count}条")
-        elif source == "百度":
-            stats.append(f"🔍 百度: {count}条")
-        elif source == "抖音":
-            stats.append(f"🎵 抖音: {count}条")
 
-    stats_text = "\n".join(stats) if stats else "暂无数据"
+        section = f"**{icon} {source} Top {min(max_items, count)}**\n{trending_list}"
+        trending_sections.append(section)
+
+    trending_content = "\n\n---\n\n".join(trending_sections) if trending_sections else "暂无数据"
 
     # 构建飞书消息卡片
     message = {
@@ -63,9 +106,9 @@ def send_feishu_message(webhook_url: str, data: Dict) -> bool:
                     "tag": "markdown",
                     "content": f"""**📅 日期**: {today} 早间版
 
-**🔥 今日热榜已更新**
+**🔥 今日热榜速览**
 
-{stats_text}
+{trending_content}
 
 ---
 *由 GitHub Actions 自动生成*"""
@@ -86,11 +129,9 @@ def send_feishu_message(webhook_url: str, data: Dict) -> bool:
         }
     }
 
-    # 在 GitHub Actions 环境中，使用 rawgit 或 jsdelivr 托管 HTML
+    # 在 GitHub Actions 环境中，添加完整日报按钮
     html_url = os.environ.get("HTML_URL", "")
     if html_url:
-        # 在 GitHub Actions 中，HTML 文件会被保存到 html/ 目录
-        # 可以通过 GitHub Pages 访问，或者直接在消息中说明本地路径
         message["card"]["elements"].insert(1, {
             "tag": "action",
             "elements": [
