@@ -129,8 +129,8 @@ def send_feishu_message(webhook_url: str, data: Dict) -> bool:
         }
     }
 
-    # 在 GitHub Actions 环境中，添加完整日报按钮
-    html_url = os.environ.get("HTML_URL", "")
+    # 添加完整日报按钮（如果有 HTML URL）
+    html_url = data.get("html_url", "") or os.environ.get("HTML_URL", "")
     if html_url:
         message["card"]["elements"].insert(1, {
             "tag": "action",

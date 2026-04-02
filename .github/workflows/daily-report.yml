@@ -68,3 +68,13 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 文件下载" >> $GITHUB_STEP_SUMMARY
           echo "在 Artifacts 中下载最新报告" >> $GITHUB_STEP_SUMMARY
+
+      # 8. 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./html
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
