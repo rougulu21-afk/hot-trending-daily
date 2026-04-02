@@ -665,13 +665,10 @@ def main():
         print("\n📤 正在推送飞书消息...")
         from push_to_feishu import send_feishu_message
 
-        # 构建 GitHub Pages URL
-        import urllib.parse
-        repo = os.environ.get("GITHUB_REPOSITORY", "gulu8/news-web")
+        # 构建 GitHub Pages URL（使用正确的仓库名 hot-trending-daily）
         html_filename = os.path.basename(html_path)
-        # GitHub Pages URL 格式: https://{username}.github.io/{repo}/
-        username = repo.split("/")[0] if "/" in repo else repo
-        github_pages_url = f"https://{username}.github.io/news-web/{urllib.parse.quote(html_filename)}"
+        # 用户的 GitHub Pages: rougulu21-afk.github.io/hot-trending-daily/
+        github_pages_url = f"https://rougulu21-afk.github.io/hot-trending-daily/{urllib.parse.quote(html_filename)}"
 
         report_data["html_url"] = github_pages_url
         send_feishu_message(webhook_url, report_data)
