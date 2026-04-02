@@ -1,21 +1,18 @@
-# 排除生成的日报文件
-html/
-data/
-
-# Python
+# 忽略 Python 缓存
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
+*.pyc
+*.pyo
+
+# 忽略虚拟环境
 venv/
+env/
 
-# IDE
-.idea/
+# 忽略 IDE 配置
 .vscode/
-*.swp
-*.swo
+.idea/
 
-# macOS
-.DS_Store
+# 忽略日志文件
+*.log
+
+# 不忽略 html 文件夹（用于 GitHub Pages）
+!html/
