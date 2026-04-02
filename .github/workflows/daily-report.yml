@@ -2,7 +2,7 @@ name: Daily Hot Report
 
 on:
   # 每天北京时间 9:00 自动运行
-  # 北京时间 = UTC + 8，所以 9:00 UTC = 1:00 UTC
+  # 北京时间 = UTC + 8，所以 9:00 北京 = 1:00 UTC
   schedule:
     - cron: "0 1 * * *"
   
@@ -57,24 +57,20 @@ jobs:
           path: ${{ steps.html-file.outputs.file }}
           retention-days: 7
 
-      # 7. 输出完成信息
+      # 7. 提交 HTML 文件到 main 分支
+      - name: Commit HTML files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ./html/
+          git diff --staged --quiet || git commit -m "docs: 更新 $(date +%Y-%m-%d) 热榜日报"
+          git push
+
+      # 8. 输出完成信息
       - name: Summary
         run: |
           echo "## 📊 每日热榜日报生成完成" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "- **日期**: $(date +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
           echo "- **运行时间**: $(date)" >> $GITHUB_STEP_SUMMARY
-          echo "- **HTML 文件**: ${{ steps.html-file.outputs.file }}" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### 文件下载" >> $GITHUB_STEP_SUMMARY
-          echo "在 Artifacts 中下载最新报告" >> $GITHUB_STEP_SUMMARY
-
-      # 8. 部署到 GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./html
-          publish_branch: gh-pages
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          echo "- **在线查看**: https://rougulu21-afk.github.io/hot-trending-daily/" >> $GITHUB_STEP_SUMMARY
