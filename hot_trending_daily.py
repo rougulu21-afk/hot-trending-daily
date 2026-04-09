@@ -626,15 +626,19 @@ def main():
         all_data[source_name] = cleaned
         print(f"  ✅ 清洗完成，保留 {len(cleaned)} 条")
 
-    # 保存JSON数据
-    json_path = os.path.join(DATA_DIR, f"{date_str}.json")
+    # 保存JSON数据（同时保存到 html/data/ 供动态首页使用）
+    json_data = {
+        "date": date_str,
+        "generated_at": datetime.now().isoformat(),
+        "sources": list(API_URLS.keys()),
+        "data": all_data
+    }
+    # 保存到 html/data/ 目录（动态首页需要）
+    html_data_dir = os.path.join(OUTPUT_DIR, "data")
+    os.makedirs(html_data_dir, exist_ok=True)
+    json_path = os.path.join(html_data_dir, f"{date_str}.json")
     with open(json_path, "w", encoding="utf-8") as f:
-        json.dump({
-            "date": date_str,
-            "generated_at": datetime.now().isoformat(),
-            "sources": list(API_URLS.keys()),
-            "data": all_data
-        }, f, ensure_ascii=False, indent=2)
+        json.dump(json_data, f, ensure_ascii=False, indent=2)
     print(f"\n💾 JSON数据已保存: {json_path}")
 
     # 生成HTML
@@ -675,118 +679,24 @@ def main():
     else:
         print("\n💡 提示: 设置 FEISHU_WEBHOOK 环境变量可自动推送飞书消息")
 
-    # 生成/更新 index.html（自动跳转最新日报）
-    generate_index_html(OUTPUT_DIR)
+    # 更新 manifest.json，指向最新日报 JSON
+    update_manifest(OUTPUT_DIR, today_str)
 
     return html_path
 
 
-def generate_index_html(output_dir: str):
-    """生成 index.html，自动列出所有日报并跳转到最新一篇"""
-    import glob
-
-    # 扫描所有日报文件
-    pattern = os.path.join(output_dir, "????-??-??-热榜日报.html")
-    files = sorted(glob.glob(pattern), reverse=True)  # 最新在前
-
-    if not files:
-        return
-
-    # 最新日报文件名
-    latest_file = os.path.basename(files[0])
-
-    # 构建历史列表 HTML
-    history_items = ""
-    for f in files:
-        name = os.path.basename(f)
-        date_part = name.replace("-热榜日报.html", "")
-        is_latest = (f == files[0])
-        badge = ' <span style="background:#ef4444;color:#fff;font-size:11px;padding:1px 7px;border-radius:10px;vertical-align:middle;margin-left:6px;">最新</span>' if is_latest else ""
-        history_items += f'<li><a href="{name}">{date_part} 热榜日报{badge}</a></li>\n'
-
-    index_html = f"""<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>每日热榜日报</title>
-  <meta http-equiv="refresh" content="0; url={latest_file}">
-  <style>
-    * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-    body {{
-      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #e2e8f0;
-    }}
-    .card {{
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 16px;
-      padding: 40px;
-      max-width: 480px;
-      width: 90%;
-      text-align: center;
-      backdrop-filter: blur(10px);
-    }}
-    .logo {{ font-size: 48px; margin-bottom: 12px; }}
-    h1 {{ font-size: 22px; font-weight: 700; margin-bottom: 8px; color: #f1f5f9; }}
-    .subtitle {{ font-size: 14px; color: #94a3b8; margin-bottom: 28px; }}
-    .jump-btn {{
-      display: inline-block;
-      background: linear-gradient(135deg, #6366f1, #8b5cf6);
-      color: #fff;
-      text-decoration: none;
-      padding: 12px 32px;
-      border-radius: 50px;
-      font-size: 15px;
-      font-weight: 600;
-      margin-bottom: 32px;
-      transition: opacity 0.2s;
-    }}
-    .jump-btn:hover {{ opacity: 0.85; }}
-    .history {{ text-align: left; }}
-    .history h2 {{ font-size: 13px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }}
-    .history ul {{ list-style: none; }}
-    .history li {{ margin-bottom: 8px; }}
-    .history a {{
-      color: #a5b4fc;
-      text-decoration: none;
-      font-size: 14px;
-      display: flex;
-      align-items: center;
-      padding: 6px 10px;
-      border-radius: 8px;
-      transition: background 0.2s;
-    }}
-    .history a:hover {{ background: rgba(255,255,255,0.07); }}
-    .tip {{ font-size: 12px; color: #475569; margin-top: 20px; }}
-  </style>
-</head>
-<body>
-  <div class="card">
-    <div class="logo">🔥</div>
-    <h1>每日热榜日报</h1>
-    <p class="subtitle">正在跳转到今日最新日报…</p>
-    <a class="jump-btn" href="{latest_file}">📰 打开今日日报</a>
-    <div class="history">
-      <h2>历史日报</h2>
-      <ul>
-        {history_items}
-      </ul>
-    </div>
-    <p class="tip">⭐ 收藏此页面，每次自动打开最新日报</p>
-  </div>
-</body>
-</html>"""
-
-    index_path = os.path.join(output_dir, "index.html")
-    with open(index_path, "w", encoding="utf-8") as f:
-        f.write(index_html)
-    print(f"✅ 首页已生成/更新: {index_path}")
+def update_manifest(output_dir: str, date: str):
+    """更新 manifest.json，指向最新日报 JSON"""
+    import json
+    manifest = {
+        "latest": f"data/{date}.json",
+        "date": date
+    }
+    manifest_path = os.path.join(output_dir, "data", "manifest.json")
+    os.makedirs(os.path.dirname(manifest_path), exist_ok=True)
+    with open(manifest_path, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, ensure_ascii=False, indent=2)
+    print(f"✅ manifest.json 已更新: {date}")
 
 
 if __name__ == "__main__":

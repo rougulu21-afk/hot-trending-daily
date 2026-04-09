@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>每日热榜日报</title>
@@ -78,10 +79,389 @@
 <li><a href="2026-04-03-热榜日报.html">2026-04-03 热榜日报</a></li>
 <li><a href="2026-04-02-热榜日报.html">2026-04-02 热榜日报</a></li>
 <li><a href="2026-04-01-热榜日报.html">2026-04-01 热榜日报</a></li>
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日热榜日报</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --secondary: #5f6368;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --border: #e8eaed;
+            --text: #202124;
+            --text-light: #5f6368;
+        }
 
-      </ul>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+        /* 加载状态 */
+        #loading {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--text-light);
+        }
+        .spinner {
+            width: 40px; height: 40px;
+            border: 3px solid #e8eaed;
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* 头部 */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-bottom: 40px;
+            border-radius: 16px;
+            position: relative;
+        }
+        .header h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 8px; }
+        .header .date { font-size: 1.1rem; opacity: 0.9; margin-bottom: 16px; }
+        .header .gen-time { font-size: 0.8rem; opacity: 0.6; }
+        .header .sources { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+        .header .source-item {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        .live-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-bottom: 12px;
+        }
+        .live-dot {
+            width: 7px; height: 7px;
+            background: #4ade80;
+            border-radius: 50%;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* Tab */
+        .tab-container { margin-top: 30px; }
+        .tab-nav {
+            display: flex;
+            gap: 8px;
+            background: var(--card-bg);
+            padding: 8px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            margin-bottom: 24px;
+            overflow-x: auto;
+        }
+        .tab-btn {
+            flex: 1; min-width: 80px;
+            display: flex; align-items: center; justify-content: center;
+            gap: 6px;
+            padding: 10px 16px;
+            border: none;
+            background: transparent;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem; font-weight: 500;
+            color: var(--text-light);
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .tab-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+        .tab-btn:hover:not(.active) { background: #f1f3f4; }
+        .tab-btn .count {
+            background: rgba(0,0,0,0.1);
+            padding: 1px 6px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+        }
+        .tab-btn.active .count { background: rgba(255,255,255,0.25); }
+
+        /* 新闻卡片列表 */
+        .news-list { display: none; }
+        .news-list.active { display: block; }
+
+        .news-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            transition: box-shadow 0.2s, transform 0.15s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+        .news-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-1px);
+        }
+
+        .rank-badge {
+            min-width: 32px; height: 32px;
+            border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 0.9rem;
+            color: white;
+            flex-shrink: 0;
+        }
+        .rank-1 { background: linear-gradient(135deg, #f59e0b, #ef4444); }
+        .rank-2 { background: linear-gradient(135deg, #94a3b8, #64748b); }
+        .rank-3 { background: linear-gradient(135deg, #cd7f32, #a0522d); }
+        .rank-default { background: #e8eaed; color: var(--text-light); }
+
+        .news-content { flex: 1; min-width: 0; }
+        .news-title {
+            font-size: 1rem; font-weight: 600;
+            color: var(--text);
+            margin-bottom: 6px;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .news-meta {
+            display: flex; gap: 12px;
+            font-size: 0.78rem; color: var(--text-light);
+            flex-wrap: wrap;
+        }
+        .news-meta span { display: flex; align-items: center; gap: 4px; }
+        .news-cover {
+            width: 100px; height: 68px;
+            border-radius: 8px;
+            object-fit: cover;
+            flex-shrink: 0;
+            background: #f1f3f4;
+        }
+
+        /* 底部 */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-light);
+            font-size: 0.8rem;
+        }
+        .footer a { color: var(--primary); text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            .header h1 { font-size: 1.6rem; }
+            .news-cover { width: 72px; height: 52px; }
+            .tab-btn { font-size: 0.8rem; padding: 8px 12px; }
+            .news-card { padding: 12px 14px; gap: 12px; }
+        }
+
+        /* 空状态 / 错误 */
+        .error-state, .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-light);
+        }
+        .error-state h3 { margin-bottom: 8px; color: #ef4444; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" id="header" style="display:none">
+            <div class="live-badge"><div class="live-dot"></div>今日热榜</div>
+            <h1 id="title">每日热榜日报</h1>
+            <div class="date" id="dateStr"></div>
+            <div class="gen-time" id="genTime"></div>
+            <div class="sources" id="sources"></div>
+        </div>
+>>>>>>> b7984ba (feat: 动态首页 index.html，JS 自动加载最新日报 JSON)
+
+        <div id="loading">
+            <div class="spinner"></div>
+            <p>正在加载今日热榜...</p>
+        </div>
+
+        <div class="tab-container" id="tabContainer" style="display:none">
+            <div class="tab-nav" id="tabNav"></div>
+            <div id="newsContent"></div>
+        </div>
+
+        <div class="footer" id="footer" style="display:none">
+            数据来源：各平台公开热榜 · <a href="https://github.com/rougulu21-afk/hot-trending-daily" target="_blank">GitHub</a>
+        </div>
     </div>
-    <p class="tip">⭐ 收藏此页面，每次自动打开最新日报</p>
-  </div>
+
+    <script>
+    (async function() {
+        const container = document.getElementById('tabContainer');
+        const loading = document.getElementById('loading');
+        const header = document.getElementById('header');
+        const footer = document.getElementById('footer');
+
+        async function loadData() {
+            try {
+                // 读取 manifest 找到最新 JSON
+                const mRes = await fetch('data/manifest.json?' + Date.now());
+                if (!mRes.ok) throw new Error('无法加载数据索引');
+                const manifest = await mRes.json();
+
+                // 加载对应日期的 JSON
+                const dataRes = await fetch(manifest.latest + '?' + Date.now());
+                if (!dataRes.ok) throw new Error('无法加载日报数据');
+                const data = await dataRes.json();
+
+                return data;
+            } catch (e) {
+                console.error(e);
+                // manifest 不存在时尝试直接读所有 JSON 找最新的
+                try {
+                    const dirs = ['2026-04-09','2026-04-08','2026-04-07','2026-04-06',
+                                  '2026-04-05','2026-04-04','2026-04-03','2026-04-02','2026-04-01'];
+                    for (const d of dirs) {
+                        const r = await fetch(`data/${d}.json?` + Date.now());
+                        if (r.ok) return await r.json();
+                    }
+                } catch(_) {}
+                return null;
+            }
+        }
+
+        const data = await loadData();
+
+        loading.style.display = 'none';
+
+        if (!data) {
+            document.querySelector('.container').innerHTML = `
+                <div class="error-state">
+                    <h3>⚠️ 暂无数据</h3>
+                    <p>今日日报尚未生成，请稍后再试，或前往 <a href="https://github.com/rougulu21-afk/hot-trending-daily">GitHub</a> 查看。</p>
+                </div>`;
+            return;
+        }
+
+        // --- 渲染头部 ---
+        header.style.display = 'block';
+        document.getElementById('title').textContent = data.date + ' 每日热榜日报';
+        document.title = data.date + ' 每日热榜日报';
+        document.getElementById('dateStr').textContent = data.date;
+        const genDate = new Date(data.generated_at);
+        document.getElementById('genTime').textContent =
+            '生成时间：' + genDate.toLocaleString('zh-CN');
+
+        const sourcesEl = document.getElementById('sources');
+        data.sources.forEach(s => {
+            const span = document.createElement('span');
+            span.className = 'source-item';
+            span.textContent = s;
+            sourcesEl.appendChild(span);
+        });
+
+        // --- 渲染 Tab + 内容 ---
+        container.style.display = 'block';
+        footer.style.display = 'block';
+
+        const platforms = Object.keys(data.data);
+        const tabNav = document.getElementById('tabNav');
+        const newsContent = document.getElementById('newsContent');
+        let activeTab = platforms[0];
+
+        // 平台配色
+        const platformColors = {
+            '36氪': '#2878ff',
+            '百度': '#2932e1',
+            '抖音': '#00f2ea',
+            '微博': '#e6162d',
+            '知乎': '#0084ff',
+            '微信': '#07c160',
+            '哔哩': '#fb7299',
+            '小红书': '#ff2442',
+        };
+
+        function renderNewsList(platform) {
+            const items = data.data[platform] || [];
+            newsContent.innerHTML = '';
+            const list = document.createElement('div');
+            list.className = 'news-list active';
+
+            if (items.length === 0) {
+                list.innerHTML = '<div class="empty-state"><p>暂无数据</p></div>';
+            } else {
+                items.forEach(item => {
+                    const rankClass = item.rank <= 3 ? `rank-${item.rank}` : 'rank-default';
+                    const card = document.createElement('a');
+                    card.className = 'news-card';
+                    card.href = item.url || '#';
+                    card.target = '_blank';
+                    card.rel = 'noopener noreferrer';
+
+                    card.innerHTML = `
+                        <div class="rank-badge ${rankClass}">${item.rank}</div>
+                        <div class="news-content">
+                            <div class="news-title">${escHtml(item.title)}</div>
+                            <div class="news-meta">
+                                ${item.hot_text ? `<span>📊 ${escHtml(item.hot_text)}</span>` : ''}
+                                ${item.summary ? `<span>📰 ${escHtml(item.summary)}</span>` : ''}
+                            </div>
+                        </div>
+                        ${item.cover ? `<img class="news-cover" src="${escAttr(item.cover)}" alt="" loading="lazy" onerror="this.style.display='none'">` : ''}
+                    `;
+                    list.appendChild(card);
+                });
+            }
+
+            newsContent.appendChild(list);
+        }
+
+        function escHtml(s) {
+            if (!s) return '';
+            return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+        }
+        function escAttr(s) {
+            if (!s) return '';
+            return String(s).replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+        }
+
+        // 初始化
+        platforms.forEach((p, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'tab-btn' + (i === 0 ? ' active' : '');
+            btn.innerHTML = `${escHtml(p)} <span class="count">${(data.data[p]||[]).length}</span>`;
+            btn.onclick = () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderNewsList(p);
+            };
+            tabNav.appendChild(btn);
+        });
+
+        renderNewsList(activeTab);
+    })();
+    </script>
 </body>
 </html>
