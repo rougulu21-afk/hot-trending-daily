@@ -1,85 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<<<<<<< HEAD
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>每日热榜日报</title>
-  <meta http-equiv="refresh" content="0; url=2026-04-09-热榜日报.html">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #e2e8f0;
-    }
-    .card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 16px;
-      padding: 40px;
-      max-width: 480px;
-      width: 90%;
-      text-align: center;
-      backdrop-filter: blur(10px);
-    }
-    .logo { font-size: 48px; margin-bottom: 12px; }
-    h1 { font-size: 22px; font-weight: 700; margin-bottom: 8px; color: #f1f5f9; }
-    .subtitle { font-size: 14px; color: #94a3b8; margin-bottom: 28px; }
-    .jump-btn {
-      display: inline-block;
-      background: linear-gradient(135deg, #6366f1, #8b5cf6);
-      color: #fff;
-      text-decoration: none;
-      padding: 12px 32px;
-      border-radius: 50px;
-      font-size: 15px;
-      font-weight: 600;
-      margin-bottom: 32px;
-      transition: opacity 0.2s;
-    }
-    .jump-btn:hover { opacity: 0.85; }
-    .history { text-align: left; }
-    .history h2 { font-size: 13px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
-    .history ul { list-style: none; }
-    .history li { margin-bottom: 8px; }
-    .history a {
-      color: #a5b4fc;
-      text-decoration: none;
-      font-size: 14px;
-      display: flex;
-      align-items: center;
-      padding: 6px 10px;
-      border-radius: 8px;
-      transition: background 0.2s;
-    }
-    .history a:hover { background: rgba(255,255,255,0.07); }
-    .tip { font-size: 12px; color: #475569; margin-top: 20px; }
-  </style>
-</head>
-<body>
-  <div class="card">
-    <div class="logo">🔥</div>
-    <h1>每日热榜日报</h1>
-    <p class="subtitle">正在跳转到今日最新日报…</p>
-    <a class="jump-btn" href="2026-04-09-热榜日报.html">📰 打开今日日报</a>
-    <div class="history">
-      <h2>历史日报</h2>
-      <ul>
-        <li><a href="2026-04-09-热榜日报.html">2026-04-09 热榜日报 <span style="background:#ef4444;color:#fff;font-size:11px;padding:1px 7px;border-radius:10px;vertical-align:middle;margin-left:6px;">最新</span></a></li>
-<li><a href="2026-04-08-热榜日报.html">2026-04-08 热榜日报</a></li>
-<li><a href="2026-04-07-热榜日报.html">2026-04-07 热榜日报</a></li>
-<li><a href="2026-04-06-热榜日报.html">2026-04-06 热榜日报</a></li>
-<li><a href="2026-04-05-热榜日报.html">2026-04-05 热榜日报</a></li>
-<li><a href="2026-04-04-热榜日报.html">2026-04-04 热榜日报</a></li>
-<li><a href="2026-04-03-热榜日报.html">2026-04-03 热榜日报</a></li>
-<li><a href="2026-04-02-热榜日报.html">2026-04-02 热榜日报</a></li>
-<li><a href="2026-04-01-热榜日报.html">2026-04-01 热榜日报</a></li>
-=======
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>每日热榜日报</title>
@@ -130,7 +51,6 @@
             color: white;
             margin-bottom: 40px;
             border-radius: 16px;
-            position: relative;
         }
         .header h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 8px; }
         .header .date { font-size: 1.1rem; opacity: 0.9; margin-bottom: 16px; }
@@ -300,7 +220,6 @@
             <div class="gen-time" id="genTime"></div>
             <div class="sources" id="sources"></div>
         </div>
->>>>>>> b7984ba (feat: 动态首页 index.html，JS 自动加载最新日报 JSON)
 
         <div id="loading">
             <div class="spinner"></div>
@@ -326,25 +245,21 @@
 
         async function loadData() {
             try {
-                // 读取 manifest 找到最新 JSON
-                const mRes = await fetch('data/manifest.json?' + Date.now());
+                const mRes = await fetch('html/data/manifest.json?' + Date.now());
                 if (!mRes.ok) throw new Error('无法加载数据索引');
                 const manifest = await mRes.json();
 
-                // 加载对应日期的 JSON
                 const dataRes = await fetch(manifest.latest + '?' + Date.now());
                 if (!dataRes.ok) throw new Error('无法加载日报数据');
                 const data = await dataRes.json();
-
                 return data;
             } catch (e) {
                 console.error(e);
-                // manifest 不存在时尝试直接读所有 JSON 找最新的
                 try {
                     const dirs = ['2026-04-09','2026-04-08','2026-04-07','2026-04-06',
                                   '2026-04-05','2026-04-04','2026-04-03','2026-04-02','2026-04-01'];
                     for (const d of dirs) {
-                        const r = await fetch(`data/${d}.json?` + Date.now());
+                        const r = await fetch(`html/data/${d}.json?` + Date.now());
                         if (r.ok) return await r.json();
                     }
                 } catch(_) {}
@@ -365,7 +280,6 @@
             return;
         }
 
-        // --- 渲染头部 ---
         header.style.display = 'block';
         document.getElementById('title').textContent = data.date + ' 每日热榜日报';
         document.title = data.date + ' 每日热榜日报';
@@ -382,26 +296,12 @@
             sourcesEl.appendChild(span);
         });
 
-        // --- 渲染 Tab + 内容 ---
         container.style.display = 'block';
         footer.style.display = 'block';
 
         const platforms = Object.keys(data.data);
         const tabNav = document.getElementById('tabNav');
         const newsContent = document.getElementById('newsContent');
-        let activeTab = platforms[0];
-
-        // 平台配色
-        const platformColors = {
-            '36氪': '#2878ff',
-            '百度': '#2932e1',
-            '抖音': '#00f2ea',
-            '微博': '#e6162d',
-            '知乎': '#0084ff',
-            '微信': '#07c160',
-            '哔哩': '#fb7299',
-            '小红书': '#ff2442',
-        };
 
         function renderNewsList(platform) {
             const items = data.data[platform] || [];
@@ -447,7 +347,6 @@
             return String(s).replace(/"/g,'&quot;').replace(/'/g,'&#39;');
         }
 
-        // 初始化
         platforms.forEach((p, i) => {
             const btn = document.createElement('button');
             btn.className = 'tab-btn' + (i === 0 ? ' active' : '');
@@ -460,7 +359,7 @@
             tabNav.appendChild(btn);
         });
 
-        renderNewsList(activeTab);
+        renderNewsList(platforms[0]);
     })();
     </script>
 </body>
