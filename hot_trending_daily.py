@@ -680,7 +680,7 @@ def main():
         print("\n💡 提示: 设置 FEISHU_WEBHOOK 环境变量可自动推送飞书消息")
 
     # 更新 manifest.json，指向最新日报 JSON
-    update_manifest(OUTPUT_DIR, today_str)
+    update_manifest(OUTPUT_DIR, date_str)
 
     return html_path
 
