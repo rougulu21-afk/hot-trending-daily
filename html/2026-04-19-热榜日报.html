@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-04-19 每日热榜日报</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --secondary: #5f6368;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --border: #e8eaed;
+            --text: #202124;
+            --text-light: #5f6368;
+            --baidu-color: #2932e1;
+            --kr-color: #f4503e;
+            --douyin-color: #00f2ea;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 头部 */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-bottom: 40px;
+            border-radius: 16px;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .header .date {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 16px;
+        }
+
+        .header .sources {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+
+        .header .source-item {
+            background: rgba(255,255,255,0.2);
+            padding: 6px 16px;
+            border-radius: 20px;
+        }
+
+        /* Tab 切换 */
+        .tab-container {
+            margin-top: 30px;
+        }
+
+        .tab-nav {
+            display: flex;
+            gap: 8px;
+            background: var(--card-bg);
+            padding: 8px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            margin-bottom: 24px;
+        }
+
+        .tab-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border: none;
+            background: transparent;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-light);
+            transition: all 0.2s;
+        }
+
+        .tab-btn:hover {
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .tab-icon {
+            font-size: 1.2rem;
+        }
+
+        .tab-name {
+            font-weight: 600;
+        }
+
+        .tab-count {
+            background: rgba(255,255,255,0.3);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+        }
+
+        .tab-btn:not(.active) .tab-count {
+            background: var(--bg);
+            color: var(--text-light);
+        }
+
+        /* Tab 内容 */
+        .tab-content {
+            min-height: 400px;
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        /* 卡片 */
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 14px;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .rank {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: white;
+        }
+
+        .rank.top1 { background: linear-gradient(135deg, #f7971e, #f5af19); }
+        .rank.top2 { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .rank.top3 { background: linear-gradient(135deg, #11998e, #38ef7d); }
+        .rank.normal { background: var(--border); color: var(--text-light); }
+
+        .card-title {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--text);
+        }
+
+        .card-title a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card-title a:hover {
+            color: var(--primary);
+        }
+
+        .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .card-cover {
+            width: 100%;
+            height: 160px;
+            border-radius: 8px;
+            object-fit: cover;
+            background: var(--bg);
+        }
+
+        .card-summary {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+
+        .hot-value {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-weight: 600;
+            color: #ea4335;
+            font-size: 0.9rem;
+        }
+
+        .hot-value::before {
+            content: "🔥";
+            font-size: 0.85rem;
+        }
+
+        .card-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        /* 页脚 */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        /* 卡片网格 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 16px;
+        }
+
+        /* 响应式 - 手机单列 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+
+            .header {
+                padding: 24px 16px;
+                margin-bottom: 24px;
+            }
+
+            .header h1 {
+                font-size: 1.6rem;
+            }
+
+            .tab-nav {
+                flex-direction: column;
+                gap: 6px;
+            }
+
+            .tab-btn {
+                padding: 10px 16px;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 加载状态 */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📊 每日热榜日报</h1>
+            <div class="date">2026-04-19 · 早间版</div>
+            <div class="sources">
+                <span class="source-item">📰 36氪</span>
+                <span class="source-item">🔍 百度</span>
+                <span class="source-item">🎵 抖音</span>
+            </div>
+        </header>
+
+        <div class="tab-container">
+            <div class="tab-nav">
+
+                <button class="tab-btn active" data-tab="kr" onclick="switchTab('kr')">
+                    <span class="tab-icon">📰</span>
+                    <span class="tab-name">36氪</span>
+                    <span class="tab-count">23</span>
+                </button>
+
+                <button class="tab-btn " data-tab="baidu" onclick="switchTab('baidu')">
+                    <span class="tab-icon">🔍</span>
+                    <span class="tab-name">百度</span>
+                    <span class="tab-count">0</span>
+                </button>
+
+                <button class="tab-btn " data-tab="douyin" onclick="switchTab('douyin')">
+                    <span class="tab-icon">🎵</span>
+                    <span class="tab-name">抖音</span>
+                    <span class="tab-count">0</span>
+                </button>
+
+            </div>
+            <div class="tab-content">
+
+                <div class="tab-panel active" id="tab-kr">
+                    <div class="card-grid">
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank top1">1</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3771731122389769" target="_blank" rel="noopener">字节，正在批量造富</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_38117a3be9d444e1a1286541db8b4246@000000@ai_oswg370160oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="字节，正在批量造富" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">融资中国</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">17,594阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3771731122389769" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank top2">2</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3772082486739719" target="_blank" rel="noopener">为了AI数据中心，马斯克和孟菲斯居民撕两年了</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_9c4ebf8059a84f5bbee66847813f193b@000000@ai_oswg291176oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="为了AI数据中心，马斯克和孟菲斯居民撕两年了" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">字母榜</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">14,437阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3772082486739719" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank top3">3</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3771701475394308" target="_blank" rel="noopener">突发：OpenAI连失大将，Sora之父离职，IPO前夜风波不断</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_412e3cc4cee449219604d5a59f6c708f@576620215@ai_oswg835093oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="突发：OpenAI连失大将，Sora之父离职，IPO前夜风波不断" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">智东西</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">10,749阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3771701475394308" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">4</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3771756155077127" target="_blank" rel="noopener">刚刚，Claude推出“Figma杀手”，设计软件股暴跌</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_2c20f7ff279442af8f8f4e9cb10cc0bd@000000@ai_oswg285911oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="刚刚，Claude推出“Figma杀手”，设计软件股暴跌" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">智东西</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">9,008阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3771756155077127" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">5</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3771736819647233" target="_blank" rel="noopener">Anthropic 要亲手杀死 Figma 了吗？</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_1b7adb9187b7484ebee36d88eb1e4e83@576620215@ai_oswg1027711oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="Anthropic 要亲手杀死 Figma 了吗？" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">极客公园</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">8,054阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3771736819647233" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">6</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3773044974453509" target="_blank" rel="noopener">比Nano Banana还夯的生图模型泄露，截图不再是证据了 | 附提示词</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260419/v2_7610063c664144b2ad56d60ba846b5a8@000000_oswg126940oswg1280oswg544_img_000?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center" alt="比Nano Banana还夯的生图模型泄露，截图不再是证据了 | 附提示词" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">爱范儿</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">7,638阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3773044974453509" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">7</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3771730656477956" target="_blank" rel="noopener">万字拆解：AI五大门派的底牌、命门与终极赌局</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_6c320ac97da546cd99db529591d1f51f@576620215_oswg139885oswg1053oswg495_img_jpg?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center" alt="万字拆解：AI五大门派的底牌、命门与终极赌局" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">盒饭财经</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">7,130阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3771730656477956" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">8</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3771690585223689" target="_blank" rel="noopener">设计行业的“棺材板”，要被Claude Design盖上了</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_9d62ff795a8b4d3b8a43789e7a9f165b@000000_oswg84069oswg940oswg399_img_000?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center" alt="设计行业的“棺材板”，要被Claude Design盖上了" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">字母AI</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">6,005阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3771690585223689" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">9</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3771770656359173" target="_blank" rel="noopener">AI芯片初创公司，进入“斩杀线”</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_1d54921b19064bf79390ba3e677f1ab4@576620215@ai_oswg1119192oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="AI芯片初创公司，进入“斩杀线”" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">半导体产业纵横</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">5,990阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3771770656359173" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">10</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3772000666337796" target="_blank" rel="noopener">哈啰新版共享单车速度赶超电动车？“能当山地车骑进川藏，但骑13分钟收我15元”</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_048e5894b867498d9f1a2cae365937f6@576620215@ai_oswg1129121oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="哈啰新版共享单车速度赶超电动车？“能当山地车骑进川藏，但骑13分钟收我15元”" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">Vista氢商业</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">5,682阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3772000666337796" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">11</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3771835501626113" target="_blank" rel="noopener">马斯克又向激光雷达开炮！没有人比我更懂激光雷达</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_c1602479cf4641e3adad5b8318cff7a6@000000@ai_oswg267908oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="马斯克又向激光雷达开炮！没有人比我更懂激光雷达" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">科技每日推送</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">5,451阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3771835501626113" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">12</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3771814578766597" target="_blank" rel="noopener">开发者们最近自荐了 3 个好用的 App</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_40dceeabadff46c3849e02783236dd57@576620215@ai_oswg947929oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="开发者们最近自荐了 3 个好用的 App" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">少数派</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">4,450阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3771814578766597" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">13</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3771691809321734" target="_blank" rel="noopener">龙虾上身 Codex</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_f77d39261051414b862c6bf09c5d9056@000000_oswg22293oswg400oswg400_img_000?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center" alt="龙虾上身 Codex" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">字母AI</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">4,011阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3771691809321734" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">14</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3771787921474309" target="_blank" rel="noopener">韩国半导体，猛攻日本腹地</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_27eed701898a4de598f0da5f5e59bad4@000000@ai_oswg297208oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="韩国半导体，猛攻日本腹地" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">半导体行业观察</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">3,988阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3771787921474309" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">15</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3773096350745350" target="_blank" rel="noopener">花上千块给毛孩子买机票的年轻人， 后悔了吗？</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260419/v2_1be53bc2e6d2498895def9ae7063abda@6100851@ai_oswg1044338oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="花上千块给毛孩子买机票的年轻人， 后悔了吗？" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">新周刊</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">3,557阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3773096350745350" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">16</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3771929563562504" target="_blank" rel="noopener">谷歌向左、李飞飞往右，阿里世界模型「快乐生蚝」杀出第三条路</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_54d295d8d6c546d3a49977fffe207595@000000@ai_oswg519674oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="谷歌向左、李飞飞往右，阿里世界模型「快乐生蚝」杀出第三条路" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">机器之心</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">3,303阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3771929563562504" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">17</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3773090942321155" target="_blank" rel="noopener">36氪首发 | 前华为工程师创业，实现临时键合载板存量循环，龙头客户已验证</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260419/v2_e6369979a8424b72afee9cbdc0e94a8f@6221844_oswg151634oswg1053oswg495_img_jpg?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center" alt="36氪首发 | 前华为工程师创业，实现临时键合载板存量循环，龙头客户已验证" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">欧雪</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">954阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3773090942321155" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">18</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3773078234268168" target="_blank" rel="noopener">一天审完两万篇，AAAI 2026首次实装AI审稿，单篇成本不到1美元</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260419/v2_ff9937f66a7148219e2d9e8a16cbacd1@000000@ai_oswg368284oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="一天审完两万篇，AAAI 2026首次实装AI审稿，单篇成本不到1美元" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">机器之心</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">723阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3773078234268168" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">19</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3772254457201152" target="_blank" rel="noopener">亏25亿，杭州89年小哥IPO：友商赚了107亿</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_df2ea98e1d914f7e996cf71f2f78824f@000000@ai_oswg403197oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="亏25亿，杭州89年小哥IPO：友商赚了107亿" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">铅笔道</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">562阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3772254457201152" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">20</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3773021667754756" target="_blank" rel="noopener">充电桩涨价，五毛一度的“拼好电”越来越少了</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260419/v2_25ee5f57a57c41a1bb99f0a91663cb67@000000@ai_oswg300314oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="充电桩涨价，五毛一度的“拼好电”越来越少了" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">汽车公社</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">531阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3773021667754756" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">21</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3773021416538880" target="_blank" rel="noopener">安全专家纷纷离职，谁为AI竞赛踩刹车</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260419/v2_835a793e5c0940618b9265c80e1de19b@000000@ai_oswg400472oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="安全专家纷纷离职，谁为AI竞赛踩刹车" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">日经中文网</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">485阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3773021416538880" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">22</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3772252212855561" target="_blank" rel="noopener">本地 AI 人人能用？我们拿千元机测了一下，结果太拉了</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260418/v2_b97c2e277dae448a9aad5f00b2771ddf@000000@ai_oswg280509oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg" alt="本地 AI 人人能用？我们拿千元机测了一下，结果太拉了" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">智能Pro</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">184阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3772252212855561" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <span class="rank normal">23</span>
+                                <h3 class="card-title">
+                                    <a href="https://36kr.com/p/3772102046171907" target="_blank" rel="noopener">擦边带货的“国民牛奶”，撕开了老字号的遮羞布</a>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-cover" src="https://img.36krcdn.com/hsossms/20260419/v2_16f84faa989b4d8ea8d4f9d230a95235@6100851_oswg965355oswg1053oswg495_img_png?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center" alt="擦边带货的“国民牛奶”，撕开了老字号的遮羞布" loading="lazy" onerror="this.style.display='none'">
+                                <div class="card-summary">金错刀</div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="hot-value">115阅读</span>
+                                <a class="card-link" href="https://36kr.com/p/3772102046171907" target="_blank" rel="noopener">查看详情 →</a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="tab-panel " id="tab-baidu">
+                    <div class="card-grid">
+
+                    </div>
+                </div>
+
+                <div class="tab-panel " id="tab-douyin">
+                    <div class="card-grid">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>📅 生成时间: 2026-04-19 04:14:53</p>
+            <p style="margin-top: 8px;">数据来源: 36氪、百度热搜、抖音热榜 | 本页面为静态页面，可直接保存分享</p>
+        </footer>
+    </div>
+
+    <script>
+        function switchTab(tabId) {
+            var btns = document.querySelectorAll(".tab-btn");
+            var panels = document.querySelectorAll(".tab-panel");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].classList.remove("active");
+            }
+            for (var j = 0; j < panels.length; j++) {
+                panels[j].classList.remove("active");
+            }
+            document.querySelector("[data-tab=" + tabId + "]").classList.add("active");
+            document.getElementById("tab-" + tabId).classList.add("active");
+        }
+    </script>
+</body>
+</html>
