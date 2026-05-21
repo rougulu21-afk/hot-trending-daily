@@ -1,0 +1,1527 @@
+{
+  "date": "2026-05-21",
+  "generated_at": "2026-05-21T05:09:41.678963",
+  "sources": [
+    "36氪",
+    "百度",
+    "抖音"
+  ],
+  "data": {
+    "36氪": [
+      {
+        "rank": 1,
+        "title": "8点1氪丨英伟达Q1净利润583亿美元；谷歌CEO：Gemini月活跃用户达9亿；寿司郎回应“盘子抽检10抽10脏”",
+        "hot_value": 26680,
+        "hot_text": "26,680阅读",
+        "summary": "8点1氪",
+        "cover": "https://img.36krcdn.com/hsossms/20260521/v2_4caeb31c99d9423db6190ab77577a6f1@5667365_oswg82810oswg1053oswg495_img_jpg?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center",
+        "url": "https://36kr.com/p/3818280989443202",
+        "source": "36氪"
+      },
+      {
+        "rank": 2,
+        "title": "段永平重估英伟达",
+        "hot_value": 21860,
+        "hot_text": "21,860阅读",
+        "summary": "字母榜",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_5a685903662445f18023e39e549da3bc@000000@ai_oswg359023oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817262959559814",
+        "source": "36氪"
+      },
+      {
+        "rank": 3,
+        "title": "年轻人找工作已经不投简历了",
+        "hot_value": 16701,
+        "hot_text": "16,701阅读",
+        "summary": "多知网",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_6740825984b84ee29a4b35c4721239ea@5888275@ai_oswg1006694oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817142445409410",
+        "source": "36氪"
+      },
+      {
+        "rank": 4,
+        "title": "全固态电池卷疯了，深扒7份重磅论文专利，量产三大难关正被解决",
+        "hot_value": 16239,
+        "hot_text": "16,239阅读",
+        "summary": "智东西",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_d79196265a6144b6b9b7a77d0bd78cc6@1743780481@ai_oswg1061690oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817063099974528",
+        "source": "36氪"
+      },
+      {
+        "rank": 5,
+        "title": "一个月烧掉 930 万元 Token 的人，也没烧出个答案",
+        "hot_value": 11896,
+        "hot_text": "11,896阅读",
+        "summary": "爱范儿",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_631a70beb2af411abd0d0da3f8af51a3@5888275@ai_oswg968641oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817407431295875",
+        "source": "36氪"
+      },
+      {
+        "rank": 6,
+        "title": "谷歌打响反击战，Antigravity 2.0上手：开放模型是步聪明棋",
+        "hot_value": 11811,
+        "hot_text": "11,811阅读",
+        "summary": "雷科技",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_9c80a2d31e6947d79c1644e22c16afb8@5888275@ai_oswg970230oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817576331747331",
+        "source": "36氪"
+      },
+      {
+        "rank": 7,
+        "title": "刚刚，Google给网站判了死刑",
+        "hot_value": 10964,
+        "hot_text": "10,964阅读",
+        "summary": "罗超Pro",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_3b514acbf0914a3ba17581eed411e957@5888275@ai_oswg899784oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817239504675078",
+        "source": "36氪"
+      },
+      {
+        "rank": 8,
+        "title": "时薪800、学历硕士起：大厂热抢的AI数据“炼金师”到底在做什么？",
+        "hot_value": 10364,
+        "hot_text": "10,364阅读",
+        "summary": "智东西",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_4315e8b6d73c48a79234b8ad2dc0c7db@000000@ai_oswg303177oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817645558694788",
+        "source": "36氪"
+      },
+      {
+        "rank": 9,
+        "title": "Agent改写互联网，赢家通吃越来越难了",
+        "hot_value": 9594,
+        "hot_text": "9,594阅读",
+        "summary": "深流研究所",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_687a5f6627634bb09c11384610da74ae@5888275@ai_oswg1011425oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817576434868489",
+        "source": "36氪"
+      },
+      {
+        "rank": 10,
+        "title": "9.9元的“抽象娃娃”卖疯了：工厂无现货，有厂家半个月卖出几十万个",
+        "hot_value": 9178,
+        "hot_text": "9,178阅读",
+        "summary": "36氪的朋友们",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_5ea0ab86e318445c98286dc0aad63f87@000000@ai_oswg364961oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817206521086851",
+        "source": "36氪"
+      },
+      {
+        "rank": 11,
+        "title": "谷歌最新发布会：没发最强模型，开卷Agent全家桶",
+        "hot_value": 8993,
+        "hot_text": "8,993阅读",
+        "summary": "AIX财经",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_e3ab32cbdf664bb0b38e04b93be92ee2@5888275@ai_oswg910958oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817321803931910",
+        "source": "36氪"
+      },
+      {
+        "rank": 12,
+        "title": "利润缩水1600亿，日本七大车企陷入至暗时刻",
+        "hot_value": 8346,
+        "hot_text": "8,346阅读",
+        "summary": "智东西",
+        "cover": "https://img.36krcdn.com/hsossms/20260521/v2_66c49760f4fb46bf8fb81874891a1056@1743780481@ai_oswg1094464oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3818370533753987",
+        "source": "36氪"
+      },
+      {
+        "rank": 13,
+        "title": "1个月干完15个月，Claude Mythos猎杀271个漏洞，有的藏了20年",
+        "hot_value": 8308,
+        "hot_text": "8,308阅读",
+        "summary": "新智元",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_513066555ed846f6b4c6ec362fc82faf@5888275@ai_oswg1149152oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817197256950919",
+        "source": "36氪"
+      },
+      {
+        "rank": 14,
+        "title": "最高奖励800万，海南押注AI一人公司，我们如何搭上这趟车？",
+        "hot_value": 7699,
+        "hot_text": "7,699阅读",
+        "summary": "BT财经",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_ebe363e4501b4c1a88273800cfe7009c@1743780481@ai_oswg906161oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817001988989184",
+        "source": "36氪"
+      },
+      {
+        "rank": 15,
+        "title": "“碳水脸”这种阴间词汇到底谁发明的？",
+        "hot_value": 7622,
+        "hot_text": "7,622阅读",
+        "summary": "槽值",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_28e07328289f4becb7a187def5455403@5888275@ai_oswg965215oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817115230078085",
+        "source": "36氪"
+      },
+      {
+        "rank": 16,
+        "title": "6个月融25亿元，他是“字节系”最猛的AI创业者",
+        "hot_value": 7137,
+        "hot_text": "7,137阅读",
+        "summary": "中国企业家杂志",
+        "cover": "https://img.36krcdn.com/hsossms/20260521/v2_d023c698001447f585bcafb47f275988@000000@ai_oswg327700oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3818285496255622",
+        "source": "36氪"
+      },
+      {
+        "rank": 17,
+        "title": "倒闭6万家的婚庆公司，被年轻人狠狠整顿了",
+        "hot_value": 7122,
+        "hot_text": "7,122阅读",
+        "summary": "金错刀",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_c391011341e04886ba9e2a101843ab7b@000000@ai_oswg394340oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817281557660549",
+        "source": "36氪"
+      },
+      {
+        "rank": 18,
+        "title": "靠两颗酸枣年入3亿、赚钱能力碾压零食巨头，闷声发财30年的江西老表要敲钟了",
+        "hot_value": 6922,
+        "hot_text": "6,922阅读",
+        "summary": "食品内参",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_cbf0a3c5060e427590145b7a8579f661@5888275@ai_oswg908893oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817197776143237",
+        "source": "36氪"
+      },
+      {
+        "rank": 19,
+        "title": "美团守得住吗？",
+        "hot_value": 6745,
+        "hot_text": "6,745阅读",
+        "summary": "强调Next",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_db2f6ef259a448a7a2128bc808dc8a96@1743780481@ai_oswg1027758oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817052390327170",
+        "source": "36氪"
+      },
+      {
+        "rank": 20,
+        "title": "段永平千亿持仓大换血，重仓英伟达、拼多多、特斯拉，背后到底在赌什么？",
+        "hot_value": 6645,
+        "hot_text": "6,645阅读",
+        "summary": "投行圈子",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_2a7792cad740491799d9ef2c7bebd875@5888275@ai_oswg1058668oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817477645763461",
+        "source": "36氪"
+      },
+      {
+        "rank": 21,
+        "title": "《给阿嬷的情书》到底有何不同",
+        "hot_value": 6183,
+        "hot_text": "6,183阅读",
+        "summary": "新声Pro",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_f32a4f1a953243f7b873d5c74af5fede@5888275@ai_oswg1192994oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817171229565188",
+        "source": "36氪"
+      },
+      {
+        "rank": 22,
+        "title": "蚂蚁灵光领跑“次抛”应用时代，国内迎来大厂入局潮",
+        "hot_value": 6144,
+        "hot_text": "6,144阅读",
+        "summary": "晓曦",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_9fd93d6f38c04679b7311841a518ca71@11416942_oswg84936oswg1053oswg495_img_jpeg?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center",
+        "url": "https://36kr.com/p/3817302965126016",
+        "source": "36氪"
+      },
+      {
+        "rank": 23,
+        "title": "中国中专生3000元挑战好莱坞：一个AI时代的逆袭神话",
+        "hot_value": 6082,
+        "hot_text": "6,082阅读",
+        "summary": "骨朵网络影视",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_7aa533096edc44499182a73051d22a5d@000000@ai_oswg416687oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817660645753991",
+        "source": "36氪"
+      },
+      {
+        "rank": 24,
+        "title": "月入3万的新中产，出门还是太能“装”了",
+        "hot_value": 6021,
+        "hot_text": "6,021阅读",
+        "summary": "新周刊",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_2611de59703b417ab5afd060dc624ea6@5888275@ai_oswg965351oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817477283120259",
+        "source": "36氪"
+      },
+      {
+        "rank": 25,
+        "title": "阿里云换地基了",
+        "hot_value": 6021,
+        "hot_text": "6,021阅读",
+        "summary": "王智远",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_ed12378b79ea4616bd996f5ea9c4df24@000000@ai_oswg377957oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817305707430790",
+        "source": "36氪"
+      },
+      {
+        "rank": 26,
+        "title": "Google最新模型翻车？用户质疑“快是快，但不够聪明”",
+        "hot_value": 5998,
+        "hot_text": "5,998阅读",
+        "summary": "世界模型工场",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_c36cd17d094340db8c15e700c491ea9b@5888275@ai_oswg960529oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817288277729541",
+        "source": "36氪"
+      },
+      {
+        "rank": 27,
+        "title": "花3万块“泡”一年，这届年轻人把澡堂子玩成了社交顶配",
+        "hot_value": 5898,
+        "hot_text": "5,898阅读",
+        "summary": "闻旅",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_1c386d82adb6448cb9ecc628c326e87f@5888275@ai_oswg1037474oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817400035902337",
+        "source": "36氪"
+      },
+      {
+        "rank": 28,
+        "title": "只买中国货，俄罗斯消费的四年巨变",
+        "hot_value": 5790,
+        "hot_text": "5,790阅读",
+        "summary": "霞光社",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_7e3fc9692fd442fab1644e5c8498b309@5888275@ai_oswg1021646oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817446985040777",
+        "source": "36氪"
+      },
+      {
+        "rank": 29,
+        "title": "AI救了一批新能源投资人",
+        "hot_value": 5774,
+        "hot_text": "5,774阅读",
+        "summary": "36氪的朋友们",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_f478594397774ceb98bd452f7f35dd22@5888275@ai_oswg1138365oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817476529669249",
+        "source": "36氪"
+      },
+      {
+        "rank": 30,
+        "title": "小鹏最强SUV上市，价格太残暴",
+        "hot_value": 5597,
+        "hot_text": "5,597阅读",
+        "summary": "科技每日推送",
+        "cover": "https://img.36krcdn.com/hsossms/20260521/v2_2f390f47a44046ea9453ff056258751f@000000@ai_oswg261329oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3818192681567112",
+        "source": "36氪"
+      },
+      {
+        "rank": 31,
+        "title": "万店餐饮巨头，集体围剿瑞幸",
+        "hot_value": 5459,
+        "hot_text": "5,459阅读",
+        "summary": "红餐网",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_1a40b4ddc4b146fb924302308e4d340b@1743780481@ai_oswg1088995oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817039069110274",
+        "source": "36氪"
+      },
+      {
+        "rank": 32,
+        "title": "不跟风大疆，“飞行机器人”来了",
+        "hot_value": 5436,
+        "hot_text": "5,436阅读",
+        "summary": "IT时报",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_ec1d57c0cdf448efabb9022d42fa7d6f@5888275@ai_oswg1044012oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817574279463814",
+        "source": "36氪"
+      },
+      {
+        "rank": 33,
+        "title": "把服务器沉到海底，这事儿是认真的",
+        "hot_value": 5382,
+        "hot_text": "5,382阅读",
+        "summary": "酷玩实验室",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_24c977fc24b546d99db34dde64e7d724@1743780481@ai_oswg1016074oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817051665875840",
+        "source": "36氪"
+      },
+      {
+        "rank": 34,
+        "title": "Google新AI「付费墙」实测：对「白嫖党」友好，但山猪没得细糠吃",
+        "hot_value": 5289,
+        "hot_text": "5,289阅读",
+        "summary": "雷科技",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_57dc6a541d8a4b8c9760424999a8d830@1743780481@ai_oswg1008422oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817688431255553",
+        "source": "36氪"
+      },
+      {
+        "rank": 35,
+        "title": "苏莱曼：从DeepMind 之父到业界笑柄",
+        "hot_value": 5228,
+        "hot_text": "5,228阅读",
+        "summary": "字母AI",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_8664c3f8772f42e4ae187e0f11d51c68@5888275@ai_oswg937149oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817472229302274",
+        "source": "36氪"
+      },
+      {
+        "rank": 36,
+        "title": "中年男人的“贵玩具”，为什么最被低估的生意？",
+        "hot_value": 5074,
+        "hot_text": "5,074阅读",
+        "summary": "新消费内参",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_43377b0d85ce406287f57c163970112e@000000@ai_oswg404499oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817659502150529",
+        "source": "36氪"
+      },
+      {
+        "rank": 37,
+        "title": "耐克和始祖鸟，为什么都盯上这个“物理外挂”？",
+        "hot_value": 4874,
+        "hot_text": "4,874阅读",
+        "summary": "体育产业生态圈",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_174874f4e92049789713406bb58b7bfb@5888275@ai_oswg898399oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817586090115969",
+        "source": "36氪"
+      },
+      {
+        "rank": 38,
+        "title": "时尚足力健，当勃肯鞋开始流行",
+        "hot_value": 4835,
+        "hot_text": "4,835阅读",
+        "summary": "精练GymSquare",
+        "cover": "https://img.36krcdn.com/hsossms/20260519/v2_21ca4bfbaeee457a833bd79468aaa5e8@000000@ai_oswg290128oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3816382849352833",
+        "source": "36氪"
+      },
+      {
+        "rank": 39,
+        "title": "最近的潮汕人，堪比家里有人考上了清华北大",
+        "hot_value": 4704,
+        "hot_text": "4,704阅读",
+        "summary": "上流UpFlow",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_01b8bceb0e754dcebbc6a1df9a47939b@5888275@ai_oswg1061146oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817124237001862",
+        "source": "36氪"
+      },
+      {
+        "rank": 40,
+        "title": "智谱AI开辟AutoClaw新入口，推出APP版本",
+        "hot_value": 4619,
+        "hot_text": "4,619阅读",
+        "summary": "新智核",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_652eefba7f15471885094c600478d8be@000000@ai_oswg397397oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817698479866757",
+        "source": "36氪"
+      },
+      {
+        "rank": 41,
+        "title": "华谊兄弟成老赖，网友：60万都没有？",
+        "hot_value": 4558,
+        "hot_text": "4,558阅读",
+        "summary": "互联网那些事",
+        "cover": "https://img.36krcdn.com/hsossms/20260521/v2_d0ddde1343d5464fb1b3b3b37e39e5c4@1743780481@ai_oswg1036437oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3818347295629576",
+        "source": "36氪"
+      },
+      {
+        "rank": 42,
+        "title": "Coding的本质=强化学习+合成数据+万卡算力？",
+        "hot_value": 4558,
+        "hot_text": "4,558阅读",
+        "summary": "硅基星芒",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_da8bddfcb2ff44f7b7d2e7ad13300b43@000000_oswg37075oswg1280oswg545_img_000?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center",
+        "url": "https://36kr.com/p/3817098575421446",
+        "source": "36氪"
+      },
+      {
+        "rank": 43,
+        "title": "首次在中国召开，AMD苏姿丰现身上海",
+        "hot_value": 4527,
+        "hot_text": "4,527阅读",
+        "summary": "36氪的朋友们",
+        "cover": "https://img.36krcdn.com/hsossms/20260521/v2_d63d39cb829647fe9e179c148fd39480@1743780481@ai_oswg992959oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3818355553043587",
+        "source": "36氪"
+      },
+      {
+        "rank": 44,
+        "title": "网易520发布会：质量为先，狙击细分赛道",
+        "hot_value": 4296,
+        "hot_text": "4,296阅读",
+        "summary": "果脯1166",
+        "cover": "https://img.36krcdn.com/hsossms/20260521/v2_51b6da8639fd45b9a1eb2ce55933a6f8@000000_oswg85401oswg1007oswg429_img_000?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center",
+        "url": "https://36kr.com/p/3817849322964098",
+        "source": "36氪"
+      },
+      {
+        "rank": 45,
+        "title": "“卡神”转投Anthropic，工作岗位是“最危险的AI”",
+        "hot_value": 4265,
+        "hot_text": "4,265阅读",
+        "summary": "36氪的朋友们",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_45ff3a44098c4c9abdf0e2ea239d60e7@5888275@ai_oswg1016584oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817196535071624",
+        "source": "36氪"
+      },
+      {
+        "rank": 46,
+        "title": "她61岁身兼数职，坚持只恋爱不结婚：我的经济和能力都不输男人",
+        "hot_value": 4150,
+        "hot_text": "4,150阅读",
+        "summary": "一条",
+        "cover": "https://img.36krcdn.com/hsossms/20260521/v2_b25e41c359124040bffa7af12c863731@1743780481@ai_oswg1261072oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3818283651138689",
+        "source": "36氪"
+      },
+      {
+        "rank": 47,
+        "title": "这部豆瓣9.1神话，18年后等来了它的观众",
+        "hot_value": 4003,
+        "hot_text": "4,003阅读",
+        "summary": "新周刊",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_f858e39f8e2f4d03b31c375a1e16e750@000000@ai_oswg400096oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817541969134723",
+        "source": "36氪"
+      },
+      {
+        "rank": 48,
+        "title": "李开复押注的北京L4自动驾驶刚刚IPO，市值90亿",
+        "hot_value": 3996,
+        "hot_text": "3,996阅读",
+        "summary": "直通IPO",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_b4df83af13c640b7a4b4a18651d397e9@5888275@ai_oswg1048237oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817197015483271",
+        "source": "36氪"
+      },
+      {
+        "rank": 49,
+        "title": "一年涨粉百万，专访留守老人的@大森子 火了?",
+        "hot_value": 3973,
+        "hot_text": "3,973阅读",
+        "summary": "TopKlout克劳锐",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_52fd9238bd284c249c373bba79ac5a0f@000000@ai_oswg408129oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3816398320403587",
+        "source": "36氪"
+      },
+      {
+        "rank": 50,
+        "title": "嗜血的AI",
+        "hot_value": 3934,
+        "hot_text": "3,934阅读",
+        "summary": "脑极体",
+        "cover": "https://img.36krcdn.com/hsossms/20260520/v2_b3bd623a72ae4c42ba28d93dee290c7f@5888275@ai_oswg858978oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+        "url": "https://36kr.com/p/3817538261681030",
+        "source": "36氪"
+      }
+    ],
+    "百度": [
+      {
+        "rank": 1,
+        "title": "中俄迈向更高质量的全面战略协作",
+        "hot_value": "790万",
+        "hot_text": "790万",
+        "summary": "5月20日，国家主席习近平在北京人民大会堂同来华进行国事访问的俄罗斯总统普京举行会谈。展望未来，习近平主席指出：“坚定不移推动中俄关系长期、健康、稳定、高质量发展，是双方着眼两国根本利益和世界发展大势作出的战略选择。”",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/86d6994713bf1e0340b20360f9044686",
+        "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E4%BF%84%E8%BF%88%E5%90%91%E6%9B%B4%E9%AB%98%E8%B4%A8%E9%87%8F%E7%9A%84%E5%85%A8%E9%9D%A2%E6%88%98%E7%95%A5%E5%8D%8F%E4%BD%9C&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 2,
+        "title": "中国最牛存储公司日赚近4亿",
+        "hot_value": "780万",
+        "hot_text": "780万",
+        "summary": "据报道，2026年一季度，长鑫科技实现营收508亿元、净利润330.1亿元。以净利润计算，相当于日赚近4亿元。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/5f412968ddf4ccdbf54f73febad636a5",
+        "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%9B%BD%E6%9C%80%E7%89%9B%E5%AD%98%E5%82%A8%E5%85%AC%E5%8F%B8%E6%97%A5%E8%B5%9A%E8%BF%914%E4%BA%BF&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 3,
+        "title": "“桂妈”太好看被网友带火到全世界",
+        "hot_value": "771万",
+        "hot_text": "771万",
+        "summary": "近日，广西文旅官方账号“桂妈”因为内容太好看，被网友带火到了全世界。5月20日，“广西文旅”亮相2026年中国网络文明大会走好网上群众路线分论坛，分享实践经验！",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/227ff29d5f88884fe59bdaca2b5eb567",
+        "url": "https://www.baidu.com/s?wd=%E2%80%9C%E6%A1%82%E5%A6%88%E2%80%9D%E5%A4%AA%E5%A5%BD%E7%9C%8B%E8%A2%AB%E7%BD%91%E5%8F%8B%E5%B8%A6%E7%81%AB%E5%88%B0%E5%85%A8%E4%B8%96%E7%95%8C&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 4,
+        "title": "今日小满 万物小得盈满",
+        "hot_value": "761万",
+        "hot_text": "761万",
+        "summary": "5月21日，我们迎来了二十四节气中的第八个节气，也是夏季的第二个节气——小满。愿健康常驻身旁，一生安稳圆满！",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/3c1ad8b8b3f27d3c3dab1d5bc7227df8",
+        "url": "https://www.baidu.com/s?wd=%E4%BB%8A%E6%97%A5%E5%B0%8F%E6%BB%A1+%E4%B8%87%E7%89%A9%E5%B0%8F%E5%BE%97%E7%9B%88%E6%BB%A1&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 5,
+        "title": "李在明说以色列总理已被列为战犯",
+        "hot_value": "752万",
+        "hot_text": "752万",
+        "summary": "当地时间5月20日，韩国总统李在明谴责以色列在国际水域扣押韩国公民，抨击以方此举“严重越界”。李在明表示：内塔尼亚胡已被列为战犯，以色列还非法抓走我国国民，这太过分了。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/82537b1e0e5e6c47c9c1cd0677c697d2",
+        "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E5%9C%A8%E6%98%8E%E8%AF%B4%E4%BB%A5%E8%89%B2%E5%88%97%E6%80%BB%E7%90%86%E5%B7%B2%E8%A2%AB%E5%88%97%E4%B8%BA%E6%88%98%E7%8A%AF&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 6,
+        "title": "男子身体不适坐路边摇椅平静去世",
+        "hot_value": "742万",
+        "hot_text": "742万",
+        "summary": "近日，一名年轻男子撑伞行走时突感不适，未呼救或挣扎，仅走向路边公共摇椅坐下休息。路人误以为避雨小憩，数小时后发现其已无生命体征，遗体随后被火化。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/bfae5602e1ddb4511a3871c7c2ffaa13",
+        "url": "https://www.baidu.com/s?wd=%E7%94%B7%E5%AD%90%E8%BA%AB%E4%BD%93%E4%B8%8D%E9%80%82%E5%9D%90%E8%B7%AF%E8%BE%B9%E6%91%87%E6%A4%85%E5%B9%B3%E9%9D%99%E5%8E%BB%E4%B8%96&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 7,
+        "title": "特朗普回应中俄元首会晤",
+        "hot_value": "733万",
+        "hot_text": "733万",
+        "summary": "当地时间5月20日，美国总统特朗普回应中俄元首会晤：我觉得很好，我和他们相处得都很好。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/001a66bf9f0b6aa35ca6cf965134b1b8",
+        "url": "https://www.baidu.com/s?wd=%E7%89%B9%E6%9C%97%E6%99%AE%E5%9B%9E%E5%BA%94%E4%B8%AD%E4%BF%84%E5%85%83%E9%A6%96%E4%BC%9A%E6%99%A4&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 8,
+        "title": "女子酒后钻进锅炉房身亡物业赔28.6万",
+        "hot_value": "723万",
+        "hot_text": "723万",
+        "summary": "据悉，一女子酒后两次进入无人看管的燃气锅炉房，次日被物业发现时已因一氧化碳中毒身亡，全身70%烧伤。日前，法院终审判定物业存在管理疏漏，赔偿28.6万元。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/c84d20a1086c3d572a5e844fb102475e",
+        "url": "https://www.baidu.com/s?wd=%E5%A5%B3%E5%AD%90%E9%85%92%E5%90%8E%E9%92%BB%E8%BF%9B%E9%94%85%E7%82%89%E6%88%BF%E8%BA%AB%E4%BA%A1%E7%89%A9%E4%B8%9A%E8%B5%9428.6%E4%B8%87&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 9,
+        "title": "北京市级机关搬迁将于2026年底完成",
+        "hot_value": "713万",
+        "hot_text": "713万",
+        "summary": "记者20日从北京市政府新闻办召开的新闻发布会获悉，到2026年年底，除履行维护首都安全稳定、保障城市运行、带有属地管理职能和面向市民、企业、社会开展管理服务的单位外，其他北京市级机关全部搬迁至北京城市副中心。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/c52c0c6b4b344b818bd1c674800d9a50",
+        "url": "https://www.baidu.com/s?wd=%E5%8C%97%E4%BA%AC%E5%B8%82%E7%BA%A7%E6%9C%BA%E5%85%B3%E6%90%AC%E8%BF%81%E5%B0%86%E4%BA%8E2026%E5%B9%B4%E5%BA%95%E5%AE%8C%E6%88%90&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 10,
+        "title": "“义乌老板娘”怎么这么牛",
+        "hot_value": "704万",
+        "hot_text": "704万",
+        "summary": "在全球各大电商平台与社交网站上，“义乌老板娘”早已是自带流量的吸睛标签。在海外社交平台，总能看到她们用流利外语热情介绍商品的身影。没有精致的布景，没有复杂的脚本，一块布料、一双袜子、一件小饰品，经她们推介，往往能在不经意间畅销全球。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/785ba4bbd5b51661057fbcad043cf245",
+        "url": "https://www.baidu.com/s?wd=%E2%80%9C%E4%B9%89%E4%B9%8C%E8%80%81%E6%9D%BF%E5%A8%98%E2%80%9D%E6%80%8E%E4%B9%88%E8%BF%99%E4%B9%88%E7%89%9B&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 11,
+        "title": "买家收到2万多元货2天后仅退款",
+        "hot_value": "694万",
+        "hot_text": "694万",
+        "summary": "近日，河北商家杨女士遭遇买家签收价值23600元的光伏水槽后仅2天便申请“仅退款”，平台介入20天无果后，其跨省1100公里赴上海维权，发现买家实为中间商且货物已被第三方使用，警方已介入调查。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/99ddc7be8a2ee4c4270e9c7bda1d4228",
+        "url": "https://www.baidu.com/s?wd=%E4%B9%B0%E5%AE%B6%E6%94%B6%E5%88%B02%E4%B8%87%E5%A4%9A%E5%85%83%E8%B4%A72%E5%A4%A9%E5%90%8E%E4%BB%85%E9%80%80%E6%AC%BE&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 12,
+        "title": "这些涉及柳州地震的信息是谣言",
+        "hot_value": "685万",
+        "hot_text": "685万",
+        "summary": "近日，网传“柳州官方预报余震”及“学校宿舍因地震开裂”均不实，地震难以精准预测，受损图片为AI生成，造谣者已被警方查处。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/5d29f689d8e0f3eb8b80fb9e16f41fc2",
+        "url": "https://www.baidu.com/s?wd=%E8%BF%99%E4%BA%9B%E6%B6%89%E5%8F%8A%E6%9F%B3%E5%B7%9E%E5%9C%B0%E9%9C%87%E7%9A%84%E4%BF%A1%E6%81%AF%E6%98%AF%E8%B0%A3%E8%A8%80&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 13,
+        "title": "泡药杨梅事件后卖惨无法挽回信任",
+        "hot_value": "676万",
+        "hot_text": "676万",
+        "summary": "近期，漳州龙海区“泡药杨梅”事件，引发广泛关注。当地果农虽通过社交媒体自证清白并求情，但市场订单仍断崖式下滑。从根源上来说，导致杨梅行业信任危机的，并非消费者。理解果农的无辜与困境，但单纯“卖惨”不能挽回信任。要真正重建信任，当地还需拿出更透明、更有力的举措。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/31490eed4979bd12248b247461c04af8",
+        "url": "https://www.baidu.com/s?wd=%E6%B3%A1%E8%8D%AF%E6%9D%A8%E6%A2%85%E4%BA%8B%E4%BB%B6%E5%90%8E%E5%8D%96%E6%83%A8%E6%97%A0%E6%B3%95%E6%8C%BD%E5%9B%9E%E4%BF%A1%E4%BB%BB&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 14,
+        "title": "孙颖莎自称中国科比",
+        "hot_value": "666万",
+        "hot_text": "666万",
+        "summary": "据悉，中国乒乓球运动员孙颖莎在备战世乒赛的封闭训练期间读科比自传。她自称“中国科比”，并与科比自传中描述的“享受独自训练时光”产生强烈共鸣。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/3c3f5287793f5a633b92e3813447d801",
+        "url": "https://www.baidu.com/s?wd=%E5%AD%99%E9%A2%96%E8%8E%8E%E8%87%AA%E7%A7%B0%E4%B8%AD%E5%9B%BD%E7%A7%91%E6%AF%94&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 15,
+        "title": "“你们都是旅游 她是探亲”",
+        "hot_value": "656万",
+        "hot_text": "656万",
+        "summary": "近日，女子在博物馆看到“闺蜜”了。女子称：这也太像了！网友：你们都是旅游，她是探亲。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/e5a61d496ff47a53c1fe9c3b482f9ca5",
+        "url": "https://www.baidu.com/s?wd=%E2%80%9C%E4%BD%A0%E4%BB%AC%E9%83%BD%E6%98%AF%E6%97%85%E6%B8%B8+%E5%A5%B9%E6%98%AF%E6%8E%A2%E4%BA%B2%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 16,
+        "title": "女子极端饮食月瘦20斤重度脂肪肝",
+        "hot_value": "646万",
+        "hot_text": "646万",
+        "summary": "近日，二十岁出头的女大学生小敏（化名）为快速瘦身，采取极端节食模式。小敏每天早晚只吃一片面包午餐也仅进食水果，一个月内体重骤降20斤，却因长期蛋白质摄入严重不足导致代谢功能紊乱，最终确诊为重度脂肪肝。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/a73ce5c39b0f6dbb2d47d738ec9ba4a8",
+        "url": "https://www.baidu.com/s?wd=%E5%A5%B3%E5%AD%90%E6%9E%81%E7%AB%AF%E9%A5%AE%E9%A3%9F%E6%9C%88%E7%98%A620%E6%96%A4%E9%87%8D%E5%BA%A6%E8%84%82%E8%82%AA%E8%82%9D&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 17,
+        "title": "古特雷斯谴责以色列：立即归还联合国",
+        "hot_value": "637万",
+        "hot_text": "637万",
+        "summary": "联合国秘书长古特雷斯的发言人20日发表声明说，古特雷斯“以最强烈的言辞”谴责以色列当局决定在其今年1月强占的联合国近东巴勒斯坦难民救济和工程处位于东耶路撒冷的大院内建立军事设施。秘书长敦促以色列政府撤销其决定，并立即将近东救济工程处的谢赫杰拉大院归还给联合国。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/324baf9c9ce913d8239913da8bf2933a",
+        "url": "https://www.baidu.com/s?wd=%E5%8F%A4%E7%89%B9%E9%9B%B7%E6%96%AF%E8%B0%B4%E8%B4%A3%E4%BB%A5%E8%89%B2%E5%88%97%EF%BC%9A%E7%AB%8B%E5%8D%B3%E5%BD%92%E8%BF%98%E8%81%94%E5%90%88%E5%9B%BD&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 18,
+        "title": "被判赔3家车企共226万 汽车博主回应",
+        "hot_value": "628万",
+        "hot_text": "628万",
+        "summary": "近日，汽车博主“龙哥讲电车”因发布针对比亚迪、赛力斯、小鹏汽车的贬损性不实言论，被三家车企起诉并累计判赔226万元。日前，该博主回应称：正筹钱赔偿，没收任何黑心钱！",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/f4941da29bd2a33e1bdc87c26cb86936",
+        "url": "https://www.baidu.com/s?wd=%E8%A2%AB%E5%88%A4%E8%B5%943%E5%AE%B6%E8%BD%A6%E4%BC%81%E5%85%B1226%E4%B8%87+%E6%B1%BD%E8%BD%A6%E5%8D%9A%E4%B8%BB%E5%9B%9E%E5%BA%94&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 19,
+        "title": "同样米粉“本地人7元游客13元”",
+        "hot_value": "617万",
+        "hot_text": "617万",
+        "summary": "近日，网友反映阳朔县个别米粉店同样米粉“本地人7元游客13元”，阳朔县市场监管局第一时间介入核查。经查，该店涉嫌区别对待消费者、标价不全，已对其立案调查，要求依法整改，将依法从严顶格处罚。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/730684747592d6a5b47dc4060d1c1250",
+        "url": "https://www.baidu.com/s?wd=%E5%90%8C%E6%A0%B7%E7%B1%B3%E7%B2%89%E2%80%9C%E6%9C%AC%E5%9C%B0%E4%BA%BA7%E5%85%83%E6%B8%B8%E5%AE%A213%E5%85%83%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 20,
+        "title": "这条朋友圈 价值74万",
+        "hot_value": "607万",
+        "hot_text": "607万",
+        "summary": "近日，民警苏斌发了一条朋友圈：“3月26日，为陈阿姨止付44万；4月16日，为武先生追回10万；4月27日，为青女士拦截20万。”这条朋友圈，价值74万！苏斌说，发这条朋友圈，不是为了“晒成绩”，而是想警醒更多人“提高警惕，守好钱袋子，别让骗子钻了空子”。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/d6bd3ff362a0bdb7ab8b4bfeadfae1e0",
+        "url": "https://www.baidu.com/s?wd=%E8%BF%99%E6%9D%A1%E6%9C%8B%E5%8F%8B%E5%9C%88+%E4%BB%B7%E5%80%BC74%E4%B8%87&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 21,
+        "title": "小学退回全损雨伞 家委会致歉补款",
+        "hot_value": "599万",
+        "hot_text": "599万",
+        "summary": "近日，苏州市浒墅关中心小学网购45把红色一次性雨伞（总价338.14元）用于运动会，使用后全部损坏并标注学生姓名后退货。商家称下单前已明确告知商品属性，退回雨伞彻底丧失销售价值，合计损失378元。目前家委会已致歉并补足款项，校方未公开回应。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/9cadb7f57a6301459cbd686f3bff21f4",
+        "url": "https://www.baidu.com/s?wd=%E5%B0%8F%E5%AD%A6%E9%80%80%E5%9B%9E%E5%85%A8%E6%8D%9F%E9%9B%A8%E4%BC%9E+%E5%AE%B6%E5%A7%94%E4%BC%9A%E8%87%B4%E6%AD%89%E8%A1%A5%E6%AC%BE&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 22,
+        "title": "官方发声：樊思睿不是院领导亲属",
+        "hot_value": "588万",
+        "hot_text": "588万",
+        "summary": "国家电投集团中央研究院5月21日发布声明，澄清网络平台关于上海交通大学学生樊思睿与研究院董事长樊胜存在亲属关系的不实传言，确认双方无任何关联，并谴责恶意造谣行为，表示已留存证据保留追责权利。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/c732a1679f46fa02c5744527de72c59d",
+        "url": "https://www.baidu.com/s?wd=%E5%AE%98%E6%96%B9%E5%8F%91%E5%A3%B0%EF%BC%9A%E6%A8%8A%E6%80%9D%E7%9D%BF%E4%B8%8D%E6%98%AF%E9%99%A2%E9%A2%86%E5%AF%BC%E4%BA%B2%E5%B1%9E&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 23,
+        "title": "一群人里蚊子为什么总叮你",
+        "hot_value": "579万",
+        "hot_text": "579万",
+        "summary": "一群人里，蚊子为什么总叮你？专家表示，蚊子其实是靠嗅觉、视觉、温度感知并锁定目标。以下这几类人是蚊子的“偏爱对象”，快自查：一、呼出二氧化碳多的人；二、出汗多体味重的人；三、体温略高的人；四、皮肤菌群特殊的人；五、穿深色衣服的人。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/e2a046ab845f83386773363a823a362f",
+        "url": "https://www.baidu.com/s?wd=%E4%B8%80%E7%BE%A4%E4%BA%BA%E9%87%8C%E8%9A%8A%E5%AD%90%E4%B8%BA%E4%BB%80%E4%B9%88%E6%80%BB%E5%8F%AE%E4%BD%A0&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 24,
+        "title": "《我的女孩》主演李多海宣布怀孕",
+        "hot_value": "570万",
+        "hot_text": "570万",
+        "summary": "5月20日，41岁韩国演员李多海宣布怀孕喜讯，正式升级为准妈妈。其曾因韩剧《我的女孩》被熟知，与崔东旭结婚3周年，婚后定居上海。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/4d14403c52e2606fb5f1dd65fdfd086c",
+        "url": "https://www.baidu.com/s?wd=%E3%80%8A%E6%88%91%E7%9A%84%E5%A5%B3%E5%AD%A9%E3%80%8B%E4%B8%BB%E6%BC%94%E6%9D%8E%E5%A4%9A%E6%B5%B7%E5%AE%A3%E5%B8%83%E6%80%80%E5%AD%95&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 25,
+        "title": "游客丽江吃饭78元一锅收费时变78半斤",
+        "hot_value": "561万",
+        "hot_text": "561万",
+        "summary": "近日，一网友称在丽江古城区就餐遭不合理收费，标价78元一锅，收费时却变成78元半斤。当地市监局：若有虚假宣传行为将处理。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/9073489e70173223d2d142f847abb8db",
+        "url": "https://www.baidu.com/s?wd=%E6%B8%B8%E5%AE%A2%E4%B8%BD%E6%B1%9F%E5%90%83%E9%A5%AD78%E5%85%83%E4%B8%80%E9%94%85%E6%94%B6%E8%B4%B9%E6%97%B6%E5%8F%9878%E5%8D%8A%E6%96%A4&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 26,
+        "title": "不交物业费业主信息被挂小区电子屏",
+        "hot_value": "552万",
+        "hot_text": "552万",
+        "summary": "近日，浙江一小区因为小区电子屏滚动播放业主欠缴物业费以及法院判决信息，在物业圈里刷屏了。据悉，这是小区物业公司催缴物业费的通知。很多网友认为，这种公开曝光欠费业主相关信息的做法，涉嫌侵犯业主的隐私权和名誉权。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/3251a2af91628fb813f9d9df295658f1",
+        "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E4%BA%A4%E7%89%A9%E4%B8%9A%E8%B4%B9%E4%B8%9A%E4%B8%BB%E4%BF%A1%E6%81%AF%E8%A2%AB%E6%8C%82%E5%B0%8F%E5%8C%BA%E7%94%B5%E5%AD%90%E5%B1%8F&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 27,
+        "title": "“6G网要来了” 中国率先布局",
+        "hot_value": "540万",
+        "hot_text": "540万",
+        "summary": "6G将实现人、机、物、灵的通信——“灵”，即具有自主学习、自主决策能力的智能体。我国6G在“十五五”时期将重点开展标准研制与产业研发，预计在2030年左右启动商业应用。到2035年将实现规模化商用部署，有望培育形成万亿元级的6G产业及应用市场。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/0d61a29e3f289952a25e1c6ff8ac6523",
+        "url": "https://www.baidu.com/s?wd=%E2%80%9C6G%E7%BD%91%E8%A6%81%E6%9D%A5%E4%BA%86%E2%80%9D+%E4%B8%AD%E5%9B%BD%E7%8E%87%E5%85%88%E5%B8%83%E5%B1%80&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 28,
+        "title": "公司强制336人每月加班44小时被罚",
+        "hot_value": "532万",
+        "hot_text": "532万",
+        "summary": "据悉，一公司违法延长336名劳动者工作时间，人均月延长工作时间44.23小时。相关部门根据《劳动保障监察条例》第二十五条规定，对该公司违法延长劳动者工作时间的违法行为作出行政处罚：警告，并按每人300元的标准罚款人民币100800元整。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/ab102294810e3932ef66cad6c4d37195",
+        "url": "https://www.baidu.com/s?wd=%E5%85%AC%E5%8F%B8%E5%BC%BA%E5%88%B6336%E4%BA%BA%E6%AF%8F%E6%9C%88%E5%8A%A0%E7%8F%AD44%E5%B0%8F%E6%97%B6%E8%A2%AB%E7%BD%9A&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 29,
+        "title": "小伙为省钱在绿化带摘花送媳妇",
+        "hot_value": "523万",
+        "hot_text": "523万",
+        "summary": "近日，一小伙为省钱在绿化带摘花送媳妇。网友：520浪漫全靠绿化带赞助！",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/ff2922626165709bd3de7472ce2d2b35",
+        "url": "https://www.baidu.com/s?wd=%E5%B0%8F%E4%BC%99%E4%B8%BA%E7%9C%81%E9%92%B1%E5%9C%A8%E7%BB%BF%E5%8C%96%E5%B8%A6%E6%91%98%E8%8A%B1%E9%80%81%E5%AA%B3%E5%A6%87&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 30,
+        "title": "男子杀害大其12岁女友被判死缓",
+        "hot_value": "513万",
+        "hot_text": "513万",
+        "summary": "2025年7月6日，山东滨州，22岁男子持刀杀害大其12岁女友。该案于2026年1月16日在无棣县人民法院开庭审理，5月18日作出判决，男子张某哲被判处死刑，缓期两年执行。20日，被害女子家属已经向滨州市人民检察院申请抗诉。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/e533d864e5e9922a7e2d52def3fb6efc",
+        "url": "https://www.baidu.com/s?wd=%E7%94%B7%E5%AD%90%E6%9D%80%E5%AE%B3%E5%A4%A7%E5%85%B612%E5%B2%81%E5%A5%B3%E5%8F%8B%E8%A2%AB%E5%88%A4%E6%AD%BB%E7%BC%93&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 31,
+        "title": "34吨面粉被雨淋湿 免赔还换一车新货",
+        "hot_value": "502万",
+        "hot_text": "502万",
+        "summary": "近日，河南新郑货车司机张师傅运输34吨面粉途中突遇暴雨，大半货物淋湿。面粉厂女老板未要求赔偿，反为其更换一车新货，张师傅发视频公开致谢。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/590b82968f0c59e7058c57e0315beb5a",
+        "url": "https://www.baidu.com/s?wd=34%E5%90%A8%E9%9D%A2%E7%B2%89%E8%A2%AB%E9%9B%A8%E6%B7%8B%E6%B9%BF+%E5%85%8D%E8%B5%94%E8%BF%98%E6%8D%A2%E4%B8%80%E8%BD%A6%E6%96%B0%E8%B4%A7&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 32,
+        "title": "初中生登顶珠峰 成中国最年轻登顶者",
+        "hot_value": "493万",
+        "hot_text": "493万",
+        "summary": "",
+        "cover": "https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg",
+        "url": "https://www.baidu.com/s?wd=%E5%88%9D%E4%B8%AD%E7%94%9F%E7%99%BB%E9%A1%B6%E7%8F%A0%E5%B3%B0+%E6%88%90%E4%B8%AD%E5%9B%BD%E6%9C%80%E5%B9%B4%E8%BD%BB%E7%99%BB%E9%A1%B6%E8%80%85&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 33,
+        "title": "“碳水脸”是对碳水的污名化",
+        "hot_value": "483万",
+        "hot_text": "483万",
+        "summary": "近日，网上“碳水脸”三个字正像病毒般蔓延。我们需要警惕这种裹着“科学”外衣的歧视，正在通过给一碗米饭贴标签给一种长相下定义，制造对立矛盾撕裂社会的包容底线。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/ccd5ec061821f0af7bef5b9d5553701a",
+        "url": "https://www.baidu.com/s?wd=%E2%80%9C%E7%A2%B3%E6%B0%B4%E8%84%B8%E2%80%9D%E6%98%AF%E5%AF%B9%E7%A2%B3%E6%B0%B4%E7%9A%84%E6%B1%A1%E5%90%8D%E5%8C%96&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 34,
+        "title": "初中生偷偷买手机 家长要求全额退款",
+        "hot_value": "474万",
+        "hot_text": "474万",
+        "summary": "近日，济南市民王先生向媒体反映，今年“五一”假期，自己上初中的孩子瞒着家人，独自在一家中国移动门店花费2200元购买了一部手机及配件。王先生发现后要求店家退货，但协商未果，目前事件已进入法律协调阶段。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/8c8a116710e4c99e43af54794eefbbf5",
+        "url": "https://www.baidu.com/s?wd=%E5%88%9D%E4%B8%AD%E7%94%9F%E5%81%B7%E5%81%B7%E4%B9%B0%E6%89%8B%E6%9C%BA+%E5%AE%B6%E9%95%BF%E8%A6%81%E6%B1%82%E5%85%A8%E9%A2%9D%E9%80%80%E6%AC%BE&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 35,
+        "title": "当领导说视频要竖屏 而素材是横屏时",
+        "hot_value": "464万",
+        "hot_text": "464万",
+        "summary": "当领导说视频要竖屏，而素材是横屏时，于是就有了这样的画面……太难了！",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/c2b133936a3a0bdf464d729adb35f112",
+        "url": "https://www.baidu.com/s?wd=%E5%BD%93%E9%A2%86%E5%AF%BC%E8%AF%B4%E8%A7%86%E9%A2%91%E8%A6%81%E7%AB%96%E5%B1%8F+%E8%80%8C%E7%B4%A0%E6%9D%90%E6%98%AF%E6%A8%AA%E5%B1%8F%E6%97%B6&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 36,
+        "title": "《新华字典》盗版销量竟超过正版",
+        "hot_value": "456万",
+        "hot_text": "456万",
+        "summary": "据报道，《新华字典》等商务印书馆核心工具书的盗版销量远大于正版，经济损失巨大。除了畅销书，教材教辅也是盗版重灾区。商务印书馆相关负责人告诉记者，该社在多地调查发现，《现代汉语词典》等工具书，竟有整个学校几千名学生都使用盗版的情况。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/6146efa927266d39dbe8a4251b623dbe",
+        "url": "https://www.baidu.com/s?wd=%E3%80%8A%E6%96%B0%E5%8D%8E%E5%AD%97%E5%85%B8%E3%80%8B%E7%9B%97%E7%89%88%E9%94%80%E9%87%8F%E7%AB%9F%E8%B6%85%E8%BF%87%E6%AD%A3%E7%89%88&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 37,
+        "title": "一把雨伞出口欧洲市场售价达2000元",
+        "hot_value": "444万",
+        "hot_text": "444万",
+        "summary": "浙江绍兴上虞区的伞具企业通过碳纤维超轻伞、国潮文创伞等高附加值产品打开欧洲市场，部分雨伞售价达2000元，2025年当地伞具产业规模突破150亿元。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/df5bcb691b95dc09dd4045e4cde26e94",
+        "url": "https://www.baidu.com/s?wd=%E4%B8%80%E6%8A%8A%E9%9B%A8%E4%BC%9E%E5%87%BA%E5%8F%A3%E6%AC%A7%E6%B4%B2%E5%B8%82%E5%9C%BA%E5%94%AE%E4%BB%B7%E8%BE%BE2000%E5%85%83&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 38,
+        "title": "男子偷电缆后返回现场指导破案被识破",
+        "hot_value": "436万",
+        "hot_text": "436万",
+        "summary": "近日，浙江一工地价值20万元的100余米电缆被盗。民警勘查时发现一名自称工人的男子主动凑上前，熟稔地分析作案手法，其异常“专业”引起警方警觉。经查，该男子李某系工地前员工，有盗窃前科。警方调阅周边监控发现，案发当晚一辆可疑车辆在断头路停留十余分钟，车主正是李某。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/5c9847a4854f1e0d28817f913d6b68bc",
+        "url": "https://www.baidu.com/s?wd=%E7%94%B7%E5%AD%90%E5%81%B7%E7%94%B5%E7%BC%86%E5%90%8E%E8%BF%94%E5%9B%9E%E7%8E%B0%E5%9C%BA%E6%8C%87%E5%AF%BC%E7%A0%B4%E6%A1%88%E8%A2%AB%E8%AF%86%E7%A0%B4&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 39,
+        "title": "女子只吃蔬菜水果2周瘦10斤进ICU",
+        "hot_value": "428万",
+        "hot_text": "428万",
+        "summary": "近日，一名22岁女子只吃蔬菜水果2周瘦10斤，因头晕恶心确诊饥饿性酮症酸中毒进ICU。医生：健康减重的速度应为每周0.5~1公斤。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/6e59f2ac6387f9b0cc79160bde72cfce",
+        "url": "https://www.baidu.com/s?wd=%E5%A5%B3%E5%AD%90%E5%8F%AA%E5%90%83%E8%94%AC%E8%8F%9C%E6%B0%B4%E6%9E%9C2%E5%91%A8%E7%98%A610%E6%96%A4%E8%BF%9BICU&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 40,
+        "title": "普京访华带了哪些企业家",
+        "hot_value": "418万",
+        "hot_text": "418万",
+        "summary": "5月19日晚，俄罗斯总统普京的专机降落北京，这是他第25次访华。随行阵容之庞大，包含5名副总理、8名部长等政府官员以及大型贸易代表团。企业界随访名单尤其值得关注。俄罗斯能源、金融、化工领域的核心人物来了不少，我们梳理了部分随行的银行、国企及民企企业家名单，一起来看。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/43aa1f906ef10641803c99ed0d321817",
+        "url": "https://www.baidu.com/s?wd=%E6%99%AE%E4%BA%AC%E8%AE%BF%E5%8D%8E%E5%B8%A6%E4%BA%86%E5%93%AA%E4%BA%9B%E4%BC%81%E4%B8%9A%E5%AE%B6&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 41,
+        "title": "日媒：澳洲中国进口车数量首超日本",
+        "hot_value": "408万",
+        "hot_text": "408万",
+        "summary": "据媒体报道，今年澳大利亚首次出现从中国进口汽车数量超过从日本进口的情况。另有数据显示，今年1至4月，澳大利亚车市上销量增长最多的五大品牌均为中国品牌，依次为比亚迪、奇瑞、吉利、长城和杰酷。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/5eb7bf07988fb274c37bf167608d129b",
+        "url": "https://www.baidu.com/s?wd=%E6%97%A5%E5%AA%92%EF%BC%9A%E6%BE%B3%E6%B4%B2%E4%B8%AD%E5%9B%BD%E8%BF%9B%E5%8F%A3%E8%BD%A6%E6%95%B0%E9%87%8F%E9%A6%96%E8%B6%85%E6%97%A5%E6%9C%AC&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 42,
+        "title": "女子称误把外卖中创可贴当豆皮咀嚼",
+        "hot_value": "396万",
+        "hot_text": "396万",
+        "summary": "近日，浙江舟山的一名消费者反映，其在外卖平台订购的“辣椒炒鸡”中吃到一枚创可贴，发现后感到十分不适。事发后，涉事餐馆已对订单进行了退款处理，但拒绝了消费者提出的1000元赔偿诉求。目前，市监部门已介入调查处理。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/92d5490fa4d2a86bcbcd9418f14f63e6",
+        "url": "https://www.baidu.com/s?wd=%E5%A5%B3%E5%AD%90%E7%A7%B0%E8%AF%AF%E6%8A%8A%E5%A4%96%E5%8D%96%E4%B8%AD%E5%88%9B%E5%8F%AF%E8%B4%B4%E5%BD%93%E8%B1%86%E7%9A%AE%E5%92%80%E5%9A%BC&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 43,
+        "title": "淑柔扮演者回应为何不进演艺圈",
+        "hot_value": "389万",
+        "hot_text": "389万",
+        "summary": "近日，电影《给阿嬷的情书》主演‌王晓慧‌在直播中回应暂不进演艺圈，坦言存在‌表演焦虑‌和‌容貌焦虑‌，担心无法达到观众期待。她表示未来可能考虑合适工作，但目前无专业演员规划。‌‌",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/b821ef512744bea4401f987d74a8acee",
+        "url": "https://www.baidu.com/s?wd=%E6%B7%91%E6%9F%94%E6%89%AE%E6%BC%94%E8%80%85%E5%9B%9E%E5%BA%94%E4%B8%BA%E4%BD%95%E4%B8%8D%E8%BF%9B%E6%BC%94%E8%89%BA%E5%9C%88&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 44,
+        "title": "小满做对这几件事很重要",
+        "hot_value": "379万",
+        "hot_text": "379万",
+        "summary": "小满做对这几件事很重要：可以适量吃“苦”，但不能当成“进补”；适度运动、微微出汗，对身体有好处；注意祛湿产品要因人而异。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/78c2a9a99f725156658b636d9d42bf5a",
+        "url": "https://www.baidu.com/s?wd=%E5%B0%8F%E6%BB%A1%E5%81%9A%E5%AF%B9%E8%BF%99%E5%87%A0%E4%BB%B6%E4%BA%8B%E5%BE%88%E9%87%8D%E8%A6%81&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 45,
+        "title": "521遇小满浪漫拉满",
+        "hot_value": "369万",
+        "hot_text": "369万",
+        "summary": "5月21日，小满节气与“521”相遇，形成传统文化与现代浪漫的独特交融。多地通过自然景观展示“小满未满”的哲学，传递“留白”的生活智慧。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/dbb00e82bb9ee2f1e2e9e3d93df2c14f",
+        "url": "https://www.baidu.com/s?wd=521%E9%81%87%E5%B0%8F%E6%BB%A1%E6%B5%AA%E6%BC%AB%E6%8B%89%E6%BB%A1&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 46,
+        "title": "中美联合侦破一起跨国犯罪案件",
+        "hot_value": "358万",
+        "hot_text": "358万",
+        "summary": "",
+        "cover": "https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg",
+        "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E7%BE%8E%E8%81%94%E5%90%88%E4%BE%A6%E7%A0%B4%E4%B8%80%E8%B5%B7%E8%B7%A8%E5%9B%BD%E7%8A%AF%E7%BD%AA%E6%A1%88%E4%BB%B6&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 47,
+        "title": "河南尉氏县通报有居民出现呕吐腹泻",
+        "hot_value": "352万",
+        "hot_text": "352万",
+        "summary": "河南尉氏县联合调查组通报：5月19日晚，尉氏县城区有居民因出现呕吐、腹泻等状况前往医院和诊所就医，经门诊治疗后症状减轻，已陆续返家。此事发生后，尉氏县高度重视，第一时间成立联合调查组，全力跟进处置。相关病理样本已送检，事件原因正在进一步调查中。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/2a5fa4aea5fa7c3d64626d56c8936718",
+        "url": "https://www.baidu.com/s?wd=%E6%B2%B3%E5%8D%97%E5%B0%89%E6%B0%8F%E5%8E%BF%E9%80%9A%E6%8A%A5%E6%9C%89%E5%B1%85%E6%B0%91%E5%87%BA%E7%8E%B0%E5%91%95%E5%90%90%E8%85%B9%E6%B3%BB&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 48,
+        "title": "谢娜发了《快乐大本营》片段",
+        "hot_value": "342万",
+        "hot_text": "342万",
+        "summary": "5月20日，谢娜在社交平台发布了《快乐大本营》片段。谢娜表示：520适合发这个快乐又有爱的视频！",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/3ea622bdf425de5e47683568a6d5584b",
+        "url": "https://www.baidu.com/s?wd=%E8%B0%A2%E5%A8%9C%E5%8F%91%E4%BA%86%E3%80%8A%E5%BF%AB%E4%B9%90%E5%A4%A7%E6%9C%AC%E8%90%A5%E3%80%8B%E7%89%87%E6%AE%B5&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 49,
+        "title": "雷霆主场复仇马刺 西决1-1战平",
+        "hot_value": "331万",
+        "hot_text": "331万",
+        "summary": "5月21日，雷霆在西部决赛第二场主场以122-113击败马刺，将系列赛大比分扳为1-1平。雷霆核心、亚历山大、砍下30分，马刺新星、文班亚马、贡献21分17篮板，但未能阻止球队失利。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/93c43e1caa0058fdaef55e1ab66c0e5c",
+        "url": "https://www.baidu.com/s?wd=%E9%9B%B7%E9%9C%86%E4%B8%BB%E5%9C%BA%E5%A4%8D%E4%BB%87%E9%A9%AC%E5%88%BA+%E8%A5%BF%E5%86%B31-1%E6%88%98%E5%B9%B3&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 50,
+        "title": "刘宇宁孙红雷新剧《铁证》开机",
+        "hot_value": "319万",
+        "hot_text": "319万",
+        "summary": "5月21日，刘宇宁孙红雷新剧《铁证》开机，聚焦“扫黑除恶常态化”。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/e45b963fd6ce99ea0d345fcc5e51e9b5",
+        "url": "https://www.baidu.com/s?wd=%E5%88%98%E5%AE%87%E5%AE%81%E5%AD%99%E7%BA%A2%E9%9B%B7%E6%96%B0%E5%89%A7%E3%80%8A%E9%93%81%E8%AF%81%E3%80%8B%E5%BC%80%E6%9C%BA&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      },
+      {
+        "rank": 51,
+        "title": "10元快剪店人狗共用一把推刀",
+        "hot_value": "312万",
+        "hot_text": "312万",
+        "summary": "近日，顾客在10元快剪店理发，发现这里人狗共用一把电动推刀。理发师傅：店内有五六把推子，昨天狗有皮肤病过来给推掉毛发，随后对推子进行了清洗消毒。",
+        "cover": "https://fyb-2.cdn.bcebos.com/hotboard_image/0e73dffa53f7321234910a6d47e10ed8",
+        "url": "https://www.baidu.com/s?wd=10%E5%85%83%E5%BF%AB%E5%89%AA%E5%BA%97%E4%BA%BA%E7%8B%97%E5%85%B1%E7%94%A8%E4%B8%80%E6%8A%8A%E6%8E%A8%E5%88%80&sa=fyb_news&rsv_dl=fyb_news",
+        "source": "百度"
+      }
+    ],
+    "抖音": [
+      {
+        "rank": 1,
+        "title": "普京结束访华",
+        "hot_value": 11040352,
+        "hot_text": "1104.0万",
+        "summary": "热榜",
+        "cover": "https://p26-sign.douyinpic.com/obj/webcast-cover/7641811958790163227?lk3s=bfd515bb&x-expires=1779354000&x-signature=H8Nbj3TtLRg8rVqiu9%2FXhB2RlLQ%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%99%AE%E4%BA%AC%E7%BB%93%E6%9D%9F%E8%AE%BF%E5%8D%8E",
+        "source": "抖音"
+      },
+      {
+        "rank": 2,
+        "title": "雷霆力克马刺大比分扳平",
+        "hot_value": 11004643,
+        "hot_text": "1100.5万",
+        "summary": "热榜",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-i-dy/6f470fa2da334283bfa034167148e0b7~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=xUrGEJL5WJvVJ8DbLl93Z0Lm4Gk%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E9%9B%B7%E9%9C%86%E5%8A%9B%E5%85%8B%E9%A9%AC%E5%88%BA%E5%A4%A7%E6%AF%94%E5%88%86%E6%89%B3%E5%B9%B3",
+        "source": "抖音"
+      },
+      {
+        "rank": 3,
+        "title": "一组数据看懂我国硬核算力网",
+        "hot_value": 10812256,
+        "hot_text": "1081.2万",
+        "summary": "普通",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015/o4ABEGobCfUQeCfn44G4oQR1EGi7IgLAYZYB0q~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=rSNHXMcZBjE2VcJ%2F%2Fy2SkfdToHs%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%B8%80%E7%BB%84%E6%95%B0%E6%8D%AE%E7%9C%8B%E6%87%82%E6%88%91%E5%9B%BD%E7%A1%AC%E6%A0%B8%E7%AE%97%E5%8A%9B%E7%BD%91",
+        "source": "抖音"
+      },
+      {
+        "rank": 4,
+        "title": "今天是小满",
+        "hot_value": 10786620,
+        "hot_text": "1078.7万",
+        "summary": "热榜",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015/oEg6a4gNZEAcBIDMsVPAa2unPiIEiiBE7Q3l9~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=kDu0K8hFpOE5z11VFo%2BVM8QJhfA%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%BB%8A%E5%A4%A9%E6%98%AF%E5%B0%8F%E6%BB%A1",
+        "source": "抖音"
+      },
+      {
+        "rank": 5,
+        "title": "这蛋糕暖到心坎里了",
+        "hot_value": 10242121,
+        "hot_text": "1024.2万",
+        "summary": "热榜",
+        "cover": "https://p5-sign.douyinpic.com/tos-cn-p-0015c000-ce/oMBPhKAAPMBIPMaVKXEE8iw7rBlgSiEaAxzMb~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=YExr3Vz1BblvZU6TE3XG0nCjVqA%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E8%BF%99%E8%9B%8B%E7%B3%95%E6%9A%96%E5%88%B0%E5%BF%83%E5%9D%8E%E9%87%8C%E4%BA%86",
+        "source": "抖音"
+      },
+      {
+        "rank": 6,
+        "title": "爱的100种语言",
+        "hot_value": 10120175,
+        "hot_text": "1012.0万",
+        "summary": "普通",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-p-0015/ogAsPMaBiy0OUQAYQXSBwigEVa4v0giZQIIYy~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=8XsU3%2B3Q2apjBJYszFhxNDKzX3M%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E7%88%B1%E7%9A%84100%E7%A7%8D%E8%AF%AD%E8%A8%80",
+        "source": "抖音"
+      },
+      {
+        "rank": 7,
+        "title": "抖音全民写作大赛开赛",
+        "hot_value": 8892598,
+        "hot_text": "889.3万",
+        "summary": "普通",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015/o8NArLAOiwW80DwgBIxba1FiIH7AjX4RvQIdP~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=66xGzngKT2m%2F9IeAD%2BimlDh7xzE%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%8A%96%E9%9F%B3%E5%85%A8%E6%B0%91%E5%86%99%E4%BD%9C%E5%A4%A7%E8%B5%9B%E5%BC%80%E8%B5%9B",
+        "source": "抖音"
+      },
+      {
+        "rank": 8,
+        "title": "论配饰对穿搭的重要性",
+        "hot_value": 8753674,
+        "hot_text": "875.4万",
+        "summary": "普通",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-p-0015/oczkYoTbB5iiaicPr1IANmIXKIsAbFMQgnGUv~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=VqQX%2BPWONHv5lE1NWNGjnBp7pY0%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E8%AE%BA%E9%85%8D%E9%A5%B0%E5%AF%B9%E7%A9%BF%E6%90%AD%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7",
+        "source": "抖音"
+      },
+      {
+        "rank": 9,
+        "title": "中俄签署并发表联合声明有何深意",
+        "hot_value": 8518294,
+        "hot_text": "851.8万",
+        "summary": "普通",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-i-dy/880dabcad1754842ae2b89a3172ef8b2~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=pjnPd5b8RMzfCNZbV1NZzuJFKz8%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%B8%AD%E4%BF%84%E7%AD%BE%E7%BD%B2%E5%B9%B6%E5%8F%91%E8%A1%A8%E8%81%94%E5%90%88%E5%A3%B0%E6%98%8E%E6%9C%89%E4%BD%95%E6%B7%B1%E6%84%8F",
+        "source": "抖音"
+      },
+      {
+        "rank": 10,
+        "title": "车手德比斯抖音粉丝超170万",
+        "hot_value": 8480859,
+        "hot_text": "848.1万",
+        "summary": "热榜",
+        "cover": "https://p11-sign.douyinpic.com/tos-cn-p-0015/oYElfC9AIAAfzIANFqngmHO0CBFMtMDDTJLgvs~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=5Nns19RG7lAgM%2FeS%2F2dDFW%2FHcuA%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E8%BD%A6%E6%89%8B%E5%BE%B7%E6%AF%94%E6%96%AF%E6%8A%96%E9%9F%B3%E7%B2%89%E4%B8%9D%E8%B6%85170%E4%B8%87",
+        "source": "抖音"
+      },
+      {
+        "rank": 11,
+        "title": "漳州“药水杨梅”事件5人被刑拘",
+        "hot_value": 8372380,
+        "hot_text": "837.2万",
+        "summary": "普通",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015/ocBZALnDLFAWAASBIqEDiEf7Ig6UgxSMANNJf9~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=vJh2EIF9hYlBfJQXGgFmik7rToM%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%BC%B3%E5%B7%9E%E2%80%9C%E8%8D%AF%E6%B0%B4%E6%9D%A8%E6%A2%85%E2%80%9D%E4%BA%8B%E4%BB%B65%E4%BA%BA%E8%A2%AB%E5%88%91%E6%8B%98",
+        "source": "抖音"
+      },
+      {
+        "rank": 12,
+        "title": "普京见到了他曾抱过的中国男孩",
+        "hot_value": 7773453,
+        "hot_text": "777.3万",
+        "summary": "普通",
+        "cover": "https://p11-sign.douyinpic.com/tos-cn-p-0015/ok4EtBFLIwxADeDBPbDDfA29I5AFCiYgpWHqQC~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=sF7tqVEVvvZeVkP6t9Np0VH1g5s%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%99%AE%E4%BA%AC%E8%A7%81%E5%88%B0%E4%BA%86%E4%BB%96%E6%9B%BE%E6%8A%B1%E8%BF%87%E7%9A%84%E4%B8%AD%E5%9B%BD%E7%94%B7%E5%AD%A9",
+        "source": "抖音"
+      },
+      {
+        "rank": 13,
+        "title": "这些涉及柳州地震信息是谣言",
+        "hot_value": 7761990,
+        "hot_text": "776.2万",
+        "summary": "热榜",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-p-0015/o8yDtIkfN61ABTnojoi7BiBAeAaBUgCDXIP0vP~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=RaG0SUsGrN1P9K4U9qEZCfY2SxY%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E8%BF%99%E4%BA%9B%E6%B6%89%E5%8F%8A%E6%9F%B3%E5%B7%9E%E5%9C%B0%E9%9C%87%E4%BF%A1%E6%81%AF%E6%98%AF%E8%B0%A3%E8%A8%80",
+        "source": "抖音"
+      },
+      {
+        "rank": 14,
+        "title": "武契奇将于5月24日至28日访华",
+        "hot_value": 7753106,
+        "hot_text": "775.3万",
+        "summary": "普通",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-p-0015c000-ce/ocF2qGnDqBX4futFEkUVFAI4AEhNfDXwq9IZoK~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=Uet6RovewZ%2FUxI7r1%2BxrHnAT%2Ft0%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%AD%A6%E5%A5%91%E5%A5%87%E5%B0%86%E4%BA%8E5%E6%9C%8824%E6%97%A5%E8%87%B328%E6%97%A5%E8%AE%BF%E5%8D%8E",
+        "source": "抖音"
+      },
+      {
+        "rank": 15,
+        "title": "给阿嬷的情书有多打动人",
+        "hot_value": 7734632,
+        "hot_text": "773.5万",
+        "summary": "普通",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-i-jm8ajry58r/bb396ba2eb824fefb750221df8da9c27~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=JQQr9Rh3PiintD3cJKGwpo%2B%2BVlw%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E7%BB%99%E9%98%BF%E5%AC%B7%E7%9A%84%E6%83%85%E4%B9%A6%E6%9C%89%E5%A4%9A%E6%89%93%E5%8A%A8%E4%BA%BA",
+        "source": "抖音"
+      },
+      {
+        "rank": 16,
+        "title": "悟空跳挑战",
+        "hot_value": 7733971,
+        "hot_text": "773.4万",
+        "summary": "知识",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-p-0015/osfL5N3IXF7fCIWIJCLUABQGAaay8BZxegFBpg~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=ugFiHnXgECk0zPj2stl8lZ1qal0%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%82%9F%E7%A9%BA%E8%B7%B3%E6%8C%91%E6%88%98",
+        "source": "抖音"
+      },
+      {
+        "rank": 17,
+        "title": "云南已进入最佳赏味期",
+        "hot_value": 7731003,
+        "hot_text": "773.1万",
+        "summary": "普通",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015c000-ce/oIyKgIJ5M61AOFjGRMimBiBAeEsBYwyoLIfwUb~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=m3FLtpJb61LAbhgTGhm9m9tY758%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%BA%91%E5%8D%97%E5%B7%B2%E8%BF%9B%E5%85%A5%E6%9C%80%E4%BD%B3%E8%B5%8F%E5%91%B3%E6%9C%9F",
+        "source": "抖音"
+      },
+      {
+        "rank": 18,
+        "title": "五哈成员邀你留下对自己的祝福",
+        "hot_value": 7725852,
+        "hot_text": "772.6万",
+        "summary": "热榜",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015/oMEgNvBPI1uIE6kOTQ4iaijUzaBaygA0AHchX~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=EZutpE0pgoPBEhxYv2Ra6Jiye%2BU%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%BA%94%E5%93%88%E6%88%90%E5%91%98%E9%82%80%E4%BD%A0%E7%95%99%E4%B8%8B%E5%AF%B9%E8%87%AA%E5%B7%B1%E7%9A%84%E7%A5%9D%E7%A6%8F",
+        "source": "抖音"
+      },
+      {
+        "rank": 19,
+        "title": "521遇小满万事皆美满",
+        "hot_value": 7719521,
+        "hot_text": "772.0万",
+        "summary": "普通",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015/osAJHqlBbQpEAwF9szIDbZANeWgfSkvOb0DImD~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=76xaJlr0Nr7PKW6yXBs9qYxLgig%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/521%E9%81%87%E5%B0%8F%E6%BB%A1%E4%B8%87%E4%BA%8B%E7%9A%86%E7%BE%8E%E6%BB%A1",
+        "source": "抖音"
+      },
+      {
+        "rank": 20,
+        "title": "黑袍纠察队第五季大结局",
+        "hot_value": 7706611,
+        "hot_text": "770.7万",
+        "summary": "普通",
+        "cover": "https://p11-sign.douyinpic.com/tos-cn-p-0015/oEs1BNG2iOEiFIhAEgrIBMILeGGZBACzAfxIWC~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=XncPzmCAq1KDnFfOUKmk3d%2Bi1ak%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E9%BB%91%E8%A2%8D%E7%BA%A0%E5%AF%9F%E9%98%9F%E7%AC%AC%E4%BA%94%E5%AD%A3%E5%A4%A7%E7%BB%93%E5%B1%80",
+        "source": "抖音"
+      },
+      {
+        "rank": 21,
+        "title": "多因素致本轮埃博拉疫情难控制",
+        "hot_value": 7693776,
+        "hot_text": "769.4万",
+        "summary": "普通",
+        "cover": "https://p11-sign.douyinpic.com/tos-cn-p-0015/o8gDDfq8AEPNIEWUIEqgFBqNIj9VAE2eQA9Gt9~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=rnzFRW4wUVaoXqzVHyfu%2Bg6I9D8%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E5%A4%9A%E5%9B%A0%E7%B4%A0%E8%87%B4%E6%9C%AC%E8%BD%AE%E5%9F%83%E5%8D%9A%E6%8B%89%E7%96%AB%E6%83%85%E9%9A%BE%E6%8E%A7%E5%88%B6",
+        "source": "抖音"
+      },
+      {
+        "rank": 22,
+        "title": "原神新剧情须弥乱成了一锅粥",
+        "hot_value": 7691151,
+        "hot_text": "769.1万",
+        "summary": "热榜",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015/oAAKAA81CiGDreYIXHNfBiaBYBRCWrI5CtVzVg~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=qlvgsjgBAwXbW1roDDob%2FCy6Xvo%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E5%8E%9F%E7%A5%9E%E6%96%B0%E5%89%A7%E6%83%85%E9%A1%BB%E5%BC%A5%E4%B9%B1%E6%88%90%E4%BA%86%E4%B8%80%E9%94%85%E7%B2%A5",
+        "source": "抖音"
+      },
+      {
+        "rank": 23,
+        "title": "公主们的水晶鞋",
+        "hot_value": 7688892,
+        "hot_text": "768.9万",
+        "summary": "热榜",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015/oop5YAZbHNFeXEQqgDFfABgrL708ZGQp9UD5Al~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=nVCHr6qX8CWuyyQHxGRGUMmyJcY%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E5%85%AC%E4%B8%BB%E4%BB%AC%E7%9A%84%E6%B0%B4%E6%99%B6%E9%9E%8B",
+        "source": "抖音"
+      },
+      {
+        "rank": 24,
+        "title": "我才不要回头",
+        "hot_value": 7688545,
+        "hot_text": "768.9万",
+        "summary": "知识",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-i-0813c001/oI0e7BiA3A1NHINbA1jYsrgEBfA2iAAQKCA1FI~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=R5rIwwz6FoqWNM0oGgJA4U6wDuA%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%88%91%E6%89%8D%E4%B8%8D%E8%A6%81%E5%9B%9E%E5%A4%B4",
+        "source": "抖音"
+      },
+      {
+        "rank": 25,
+        "title": "丁程鑫 来自满分男的魅力",
+        "hot_value": 7687067,
+        "hot_text": "768.7万",
+        "summary": "热榜",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-p-0015c000-ce/oIxiZVR3kHAEgB2uiBzT5aNjEOIM7wPviA3GA~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=yk%2Bo7x7w4ZVX1RIIf%2F47ev20N%2FI%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%B8%81%E7%A8%8B%E9%91%AB%20%E6%9D%A5%E8%87%AA%E6%BB%A1%E5%88%86%E7%94%B7%E7%9A%84%E9%AD%85%E5%8A%9B",
+        "source": "抖音"
+      },
+      {
+        "rank": 26,
+        "title": "花小龙联动李晨真的狠狠期待了",
+        "hot_value": 7686691,
+        "hot_text": "768.7万",
+        "summary": "热榜",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-i-0813c000-ce/o0FwAfsGELAADBvAIUIGO3ekQA11g73JJOa7f7~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=qG7Ttenal8K3T%2FcampzoBOPEAg4%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E8%8A%B1%E5%B0%8F%E9%BE%99%E8%81%94%E5%8A%A8%E6%9D%8E%E6%99%A8%E7%9C%9F%E7%9A%84%E7%8B%A0%E7%8B%A0%E6%9C%9F%E5%BE%85%E4%BA%86",
+        "source": "抖音"
+      },
+      {
+        "rank": 27,
+        "title": "我想把爱说出来",
+        "hot_value": 7684209,
+        "hot_text": "768.4万",
+        "summary": "热榜",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-p-0015/ooQFiBCxEd7EsrrfwffuNIwSUhShIDg4GBEAAB~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=gt9koheReQkL3S5lnkrbrc2GoD8%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%88%91%E6%83%B3%E6%8A%8A%E7%88%B1%E8%AF%B4%E5%87%BA%E6%9D%A5",
+        "source": "抖音"
+      },
+      {
+        "rank": 28,
+        "title": "为什么说小满胜万全",
+        "hot_value": 7680731,
+        "hot_text": "768.1万",
+        "summary": "普通",
+        "cover": "https://p5-ex-gddgtc-sign.douyinpic.com/tos-cn-p-0015/osYIIBALCgfrg7QA5iBGy4gvZYfxGeUCG1zUFa~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=mfITo653sMkGqELW7Y7F%2FOi8U2c%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E5%B0%8F%E6%BB%A1%E8%83%9C%E4%B8%87%E5%85%A8",
+        "source": "抖音"
+      },
+      {
+        "rank": 29,
+        "title": "宗师王者语音包上线",
+        "hot_value": 7680241,
+        "hot_text": "768.0万",
+        "summary": "热榜",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015c000-ce/okwCeE4IDi2QvC97wEfKAtACSFlr6qEAWep9OK~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=%2F5xCoSWiYGMb%2Feel5SBHdNwKbwU%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E5%AE%97%E5%B8%88%E7%8E%8B%E8%80%85%E8%AF%AD%E9%9F%B3%E5%8C%85%E4%B8%8A%E7%BA%BF",
+        "source": "抖音"
+      },
+      {
+        "rank": 30,
+        "title": "给阿嬷的情书伏笔刀人",
+        "hot_value": 7677379,
+        "hot_text": "767.7万",
+        "summary": "热榜",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-i-0813c001/oMAAszB3iADeCqImA9lrACBAp1uEICAfgqKnLi~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=%2FscFhh8JHm6ZmSiq9VY%2FqWUdCGA%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E7%BB%99%E9%98%BF%E5%AC%B7%E7%9A%84%E6%83%85%E4%B9%A6%E4%BC%8F%E7%AC%94%E5%88%80%E4%BA%BA",
+        "source": "抖音"
+      },
+      {
+        "rank": 31,
+        "title": "于娜退圈十年复出首综",
+        "hot_value": 7673434,
+        "hot_text": "767.3万",
+        "summary": "热榜",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015c000-ce/okQDImp8sM1UXJANEELe7gfMgQNBOwBpe5GLIG~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=YNNqIywMQgJ%2BuoJmpUzb7wnt15E%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%BA%8E%E5%A8%9C%E9%80%80%E5%9C%88%E5%8D%81%E5%B9%B4%E5%A4%8D%E5%87%BA%E9%A6%96%E7%BB%BC",
+        "source": "抖音"
+      },
+      {
+        "rank": 32,
+        "title": "颜凯告白信被风吹走好抓马",
+        "hot_value": 7672307,
+        "hot_text": "767.2万",
+        "summary": "热榜",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015/ogaSNLC7EGUwGgBKMAQMAlz8QeZDfGBIeUQLjF~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=60QllgqJkLjVPFc6oeIBGeFYD30%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E9%A2%9C%E5%87%AF%E5%91%8A%E7%99%BD%E4%BF%A1%E8%A2%AB%E9%A3%8E%E5%90%B9%E8%B5%B0%E5%A5%BD%E6%8A%93%E9%A9%AC",
+        "source": "抖音"
+      },
+      {
+        "rank": 33,
+        "title": "为OK了老铁们绘制一个片头",
+        "hot_value": 7668765,
+        "hot_text": "766.9万",
+        "summary": "热榜",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015c000-ce/ocdeE7FLEqoAb1vMECDAIUDh9nqwRBcACEE9f5~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=YTPpfjeQzOqbE2cAzxFdAKhBz0k%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%B8%BAOK%E4%BA%86%E8%80%81%E9%93%81%E4%BB%AC%E7%BB%98%E5%88%B6%E4%B8%80%E4%B8%AA%E7%89%87%E5%A4%B4",
+        "source": "抖音"
+      },
+      {
+        "rank": 34,
+        "title": "三角洲520挖宝彩蛋攻略",
+        "hot_value": 7652354,
+        "hot_text": "765.2万",
+        "summary": "普通",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-p-0015/owNsBPgiIDBlIc4IgaC6Q2P8g8AMiITy2CIPA~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=FfiKEoDQCFxJ0oCB6iSr975I70E%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%B8%89%E8%A7%92%E6%B4%B2520%E6%8C%96%E5%AE%9D%E5%BD%A9%E8%9B%8B%E6%94%BB%E7%95%A5",
+        "source": "抖音"
+      },
+      {
+        "rank": 35,
+        "title": "夏奇拉daidai舞蹈挑战",
+        "hot_value": 7652247,
+        "hot_text": "765.2万",
+        "summary": "知识",
+        "cover": "https://p11-sign.douyinpic.com/tos-cn-p-0015/o0UqCEDqIABEA4lqfAAgQl3FClUilSE8eHR9Dv~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=pqCZfNismuLF4hRSVO5xbK%2BS2OQ%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E5%A4%8F%E5%A5%87%E6%8B%89daidai%E8%88%9E%E8%B9%88%E6%8C%91%E6%88%98",
+        "source": "抖音"
+      },
+      {
+        "rank": 36,
+        "title": "东北超战歌燃起来了",
+        "hot_value": 7648724,
+        "hot_text": "764.9万",
+        "summary": "普通",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015c000-ce/oweNDNwQ2gW8efAkYAFFRgUMQAzoHlMf2RQTWG~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=U4IAXsR9uEvthhtBOg%2Bv4BHZmaY%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%B8%9C%E5%8C%97%E8%B6%85%E6%88%98%E6%AD%8C%E7%87%83%E8%B5%B7%E6%9D%A5%E4%BA%86",
+        "source": "抖音"
+      },
+      {
+        "rank": 37,
+        "title": "520都来跳宠坏脆脆摇",
+        "hot_value": 7647312,
+        "hot_text": "764.7万",
+        "summary": "知识",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-p-0015/oE2wOCnpArjQvMcoefILIrxKQEPetXXVzAGfDP~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=%2Bd9G%2FkyjHxMkTvksK7MoWyqNCSc%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/520%E9%83%BD%E6%9D%A5%E8%B7%B3%E5%AE%A0%E5%9D%8F%E8%84%86%E8%84%86%E6%91%87",
+        "source": "抖音"
+      },
+      {
+        "rank": 38,
+        "title": "鼠牛虎兔童年回忆杀",
+        "hot_value": 7641758,
+        "hot_text": "764.2万",
+        "summary": "知识",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-i-0813c000-ce/oURIjigIEkDAE8TFKMEtAUVevAfJ7BAAEl6Uf4~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=XJRhISFNU1KkwHEpcfublq7h4fU%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E9%BC%A0%E7%89%9B%E8%99%8E%E5%85%94%E7%AB%A5%E5%B9%B4%E5%9B%9E%E5%BF%86%E6%9D%80",
+        "source": "抖音"
+      },
+      {
+        "rank": 39,
+        "title": "李显龙到访广西",
+        "hot_value": 7640920,
+        "hot_text": "764.1万",
+        "summary": "普通",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015/okAAGsYNEoqQfBY5wgDTAQ95CDP9E6FgfJ4Ay5~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=SUoiaSBDeySiit%2BZ3FTw97XFcBI%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%9D%8E%E6%98%BE%E9%BE%99%E5%88%B0%E8%AE%BF%E5%B9%BF%E8%A5%BF",
+        "source": "抖音"
+      },
+      {
+        "rank": 40,
+        "title": "万物皆可粉彩系",
+        "hot_value": 7640554,
+        "hot_text": "764.1万",
+        "summary": "普通",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015c000-ce/oQLYwCDEyIqhFYGbqofB9fJSLumgCwAYAEEc8E~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=SMGmxbatjgdfolw2X9MEZY%2BQkrA%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%B8%87%E7%89%A9%E7%9A%86%E5%8F%AF%E7%B2%89%E5%BD%A9%E7%B3%BB",
+        "source": "抖音"
+      },
+      {
+        "rank": 41,
+        "title": "朵莉亚新皮肤幻海寻迹",
+        "hot_value": 7639674,
+        "hot_text": "764.0万",
+        "summary": "热榜",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015/oofA64qQVuSD1B5ngMDKsfESFAA9YUC6b6Js8Q~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=3RT7NgUJ8ylol%2F7UTTOSpydsCl0%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%9C%B5%E8%8E%89%E4%BA%9A%E6%96%B0%E7%9A%AE%E8%82%A4%E5%B9%BB%E6%B5%B7%E5%AF%BB%E8%BF%B9",
+        "source": "抖音"
+      },
+      {
+        "rank": 42,
+        "title": "二次元的520",
+        "hot_value": 7635688,
+        "hot_text": "763.6万",
+        "summary": "热榜",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-i-0813c000-ce/okm9uCEAkAzuVIoPAeD1oswEDfAyFEA3tCAqKI~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=PHQHZKV%2BXkBfjs14KAEx8SBukRc%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%BA%8C%E6%AC%A1%E5%85%83%E7%9A%84520",
+        "source": "抖音"
+      },
+      {
+        "rank": 43,
+        "title": "轻松拿捏cleanfit穿搭",
+        "hot_value": 7633288,
+        "hot_text": "763.3万",
+        "summary": "普通",
+        "cover": "https://p5-ex-gddgtc-sign.douyinpic.com/tos-cn-p-0015c000-ce/oUQBoErIB2bwMBmywifMAzE3piviI1EAJyveEJ~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=KfOX2HVIDYUVTdpuGf07T2TIIwM%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E8%BD%BB%E6%9D%BE%E6%8B%BF%E6%8D%8Fcleanfit%E7%A9%BF%E6%90%AD",
+        "source": "抖音"
+      },
+      {
+        "rank": 44,
+        "title": "LESSERAFIM新歌预告",
+        "hot_value": 7633200,
+        "hot_text": "763.3万",
+        "summary": "普通",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015c000-ce/o8FNULHBIgAQgiGFo1epsyjA7CkfUGOEJGebDq~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=9oSsZ153SnhD%2Fdrjz2KXhu0HJ7c%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/LESSERAFIM%E6%96%B0%E6%AD%8C%E9%A2%84%E5%91%8A",
+        "source": "抖音"
+      },
+      {
+        "rank": 45,
+        "title": "新手快速出妆小心机",
+        "hot_value": 7632559,
+        "hot_text": "763.3万",
+        "summary": "普通",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015c000-ce/oQcWffrCDQAwQXh7AGFFQ47HRDfSUuJQESgZBF~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=kgdGppflbIRNJ31iOKFS0T8On%2BE%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%96%B0%E6%89%8B%E5%BF%AB%E9%80%9F%E5%87%BA%E5%A6%86%E5%B0%8F%E5%BF%83%E6%9C%BA",
+        "source": "抖音"
+      },
+      {
+        "rank": 46,
+        "title": "翟一莹520就这么拿捏我",
+        "hot_value": 7631838,
+        "hot_text": "763.2万",
+        "summary": "热榜",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-p-0015c000-ce/o46PxkSEasai1BB064MB1m3RqMJANP8iBAIgm~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=z1kS%2BeOM8NNSTlBmFeCkl4uTKGY%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E7%BF%9F%E4%B8%80%E8%8E%B9520%E5%B0%B1%E8%BF%99%E4%B9%88%E6%8B%BF%E6%8D%8F%E6%88%91",
+        "source": "抖音"
+      },
+      {
+        "rank": 47,
+        "title": "鹤男回应出演攻玉",
+        "hot_value": 7630338,
+        "hot_text": "763.0万",
+        "summary": "热榜",
+        "cover": "https://p3-sign.douyinpic.com/tos-cn-p-0015/oAOGEfgvDAcqFPDAhNEYWLIdDBDI7ueg4u9VGA~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=grSG58IAD1SNsUS1Q2E%2FhV%2BjLTU%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E9%B9%A4%E7%94%B7%E5%9B%9E%E5%BA%94%E5%87%BA%E6%BC%94%E6%94%BB%E7%8E%89",
+        "source": "抖音"
+      },
+      {
+        "rank": 48,
+        "title": "怦然恩新CP官宣",
+        "hot_value": 7628069,
+        "hot_text": "762.8万",
+        "summary": "热榜",
+        "cover": "https://p26-sign.douyinpic.com/tos-cn-p-0015/o0aNGIE7HIOQBlfBIUoAQpGZLTeCACEr4QvaUe~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=FFcE%2BpH3z7fpHyo2IZIXE9jfbEU%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%80%A6%E7%84%B6%E6%81%A9%E6%96%B0CP%E5%AE%98%E5%AE%A3",
+        "source": "抖音"
+      },
+      {
+        "rank": 49,
+        "title": "深度解析给阿嬷的情书",
+        "hot_value": 7626778,
+        "hot_text": "762.7万",
+        "summary": "热榜",
+        "cover": "https://p11-sign.douyinpic.com/tos-cn-p-0015/oYE9AAeLLF00YDfCIoEDoFfCIxH0Ae9pCMMCr2~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=3%2FZyzlkb88FtpQz27gD4koyIFRs%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90%E7%BB%99%E9%98%BF%E5%AC%B7%E7%9A%84%E6%83%85%E4%B9%A6",
+        "source": "抖音"
+      },
+      {
+        "rank": 50,
+        "title": "井胧井迪巡演官宣首站沈阳",
+        "hot_value": 7626647,
+        "hot_text": "762.7万",
+        "summary": "热榜",
+        "cover": "https://p5-ex-gddgtc-sign.douyinpic.com/tos-cn-p-0015/o4x1MjeqwAk1DeQRgIiIBPCBhvvnsppiAAB8NI~noop.jpeg?lk3s=bfd515bb&x-expires=1779354000&x-signature=kmoCDKb48E27SwQ%2FjVwLJPjIxWI%3D&from=3218412987",
+        "url": "https://www.douyin.com/search/%E4%BA%95%E8%83%A7%E4%BA%95%E8%BF%AA%E5%B7%A1%E6%BC%94%E5%AE%98%E5%AE%A3%E9%A6%96%E7%AB%99%E6%B2%88%E9%98%B3",
+        "source": "抖音"
+      }
+    ]
+  }
+}
